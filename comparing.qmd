@@ -1,0 +1,152 @@
+---
+title: "Comparing Past vs. Present Conditions"
+---
+
+```{r include=FALSE, echo=FALSE, message=FALSE, warning=FALSE}
+library(chorddiag)
+library(htmlwidgets)
+library(igraph)
+library(readr)
+library(tidygraph)
+library(tidyverse)
+
+```
+
+Using LANDFIRE's BpS products, we explore two different ways to visualize past vs.current vegetation patterns. First we present **changes in broad ecosystem types** using an interactive comparison diagram. Second we compare **amounts of succession classes** (past and present) for the most prevalent ecosystems. 
+
+## Comparing Broad Vegetation Trends
+### Summary
+
+
+```{r chord, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+# read in data
+chord_df<- read_csv("data/bps2evt_chord.csv")
+#view(histFireGVchord)
+
+#convert to matrix
+matrix_df <-as.matrix(as_adjacency_matrix(as_tbl_graph(chord_df),attr = "ACRES"))
+
+#clean up matrix (could be cleaner!)
+matrix_df = subset(matrix_df, select = -c(1:6))
+
+matrix_df <- matrix_df[-c(7:15),]
+
+#make a custom color pallet #eb4034 (redish) #b0af9e(grey)
+
+# ORIGINAL
+groupColors <-c( "#1d4220", # conifer 
+                 "#fc9d03", # grassland
+                 "#56bf5f", # hardwood
+                 "#397d3f", # hardwood-conifer 
+                 "#7db7c7", # riparian 
+                 "#6e4f1e", # shrubland
+                 "#f5e942", # cur ag
+                 "#1d4220", # cur conifer
+                 "#397d3f", # cur hdw-con
+                 "#b0af9e", # developed
+                 "#eb4034", # exotics
+                 "#fc9d03", # grassland
+                 "#56bf5f", # hardwood
+                 "#7db7c7",
+                 "#6e4f1e"# shrubland
+                 
+
+)
+
+
+
+#make chord diagram
+chord<-chorddiag(data = matrix_df,
+                 type = "bipartite",
+                 groupColors = groupColors,
+                 groupnamePadding = 10,
+                 groupPadding = 3,
+                 groupnameFontsize = 12 ,
+                 showTicks = FALSE,
+                 margin=130,
+                 tooltipGroupConnector = "    &#x25B6;    ",
+                 chordedgeColor = "#363533"
+)
+chord 
+
+#save then print to have white background
+htmlwidgets::saveWidget(chord,
+                        "chord.html",
+                        background = "white",
+                        selfcontained = TRUE
+                        )
+```
+
+
+
+<iframe src="chord.html" height="720" width="720" style="border: 1px solid #464646;" allowfullscreen="" allow="autoplay" data-external=".5"></iframe>
+
+<br>
+
+## Succession classes for most dominant BpSs
+### Quick Summary
+- For the BpS presented here there is an under-representation of early successional classes (across all ecosystems)
+- Inter-Mountain Basins Mat Saltbrush Shrubland / Montane Sagebrush Steppe both have substantial amounts of uncharacteristic native vegetation (may be associated with Pinyon Juniper encroachment in the region)
+- Rocky Mountain Montane Riparian Systems have the highest level of agriculture 
+
+
+```{r scls chart, echo=FALSE, message=FALSE, warning=FALSE, fig.width=10, fig.height=9}
+
+BPS_SCLS2 <- read.csv("data/bpsScls2.csv")
+
+bps_scls_3 <- BPS_SCLS2 %>%
+  group_by(Var1) %>%
+  mutate(total.count = sum(Freq)) %>%
+  ungroup() %>%
+  dplyr::filter(dense_rank(desc(total.count)) < 7) %>%
+  dplyr::select(c("BpS_Name", "refLabel",  "currentPercent", "refPercent")) %>%
+  pivot_longer(
+    cols = c(`refPercent`, `currentPercent`), 
+    names_to = "refCur", 
+    values_to = "Percent"
+    )
+
+# order classes
+bps_scls_3$refLabel <- factor(bps_scls_3$refLabel, levels= c(
+  "Developed",
+  "Agriculture",
+  "UE",
+  "UN",
+  "E",
+  "D",
+  "C",
+  "B",
+  "A"))
+
+
+
+
+sclasplot <-
+  ggplot(bps_scls_3, aes(fill=factor(refCur), y=Percent, x=refLabel)) + 
+  geom_col(width = 0.8, position = position_dodge()) +
+  coord_flip() +
+  facet_grid(. ~BpS) +
+  scale_x_discrete(limits = (levels(bps_scls_3$refLabel))) +
+  labs(
+    title = "Succession Classes past and present",
+    subtitle = "5 BpSs selected for illustration. Not all succession classes present in all BpSs",
+    caption = "Data from landfire.gov; Chart © Randy Swaty",
+    x = "",
+    y = "Percent")+
+  theme_minimal(base_size = 14)+
+  theme(plot.title.position = "plot", #NEW parameter. Apply for subtitle too.
+        plot.caption.position =  "plot") +
+  scale_fill_manual(values = c("#3d4740", "#32a852" ), # present (grey), historical (green)
+                    name = " ", 
+                    labels = c("Present",
+                               "Past")) +
+  facet_wrap(~BpS_Name, nrow(3),labeller = labeller(BpS_Name = label_wrap_gen())) +
+    theme(panel.spacing = unit(.05, "lines"),
+        panel.border = element_rect(color = "black", fill = NA, size = 1), 
+        strip.background = element_rect(color = "black", size = 1))
+
+sclasplot
+
+```
+
+

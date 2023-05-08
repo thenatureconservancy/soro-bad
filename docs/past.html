@@ -1,0 +1,3386 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>LANDFIRE-Powered Landscape Assessment - Past</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+<script src="site_libs/jquery-3.5.1/jquery.min.js"></script>
+<link href="site_libs/selectize-0.12.4/css/selectize.bootstrap3.css" rel="stylesheet">
+<script src="site_libs/selectize-0.12.4/js/selectize.min.js"></script>
+<link href="site_libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
+<script src="site_libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+<script src="site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<script src="site_libs/plotly-binding-4.10.1/plotly.js"></script>
+<script src="site_libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+<script src="site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="site_libs/bootstrap-grid-3.4.1/bootstrap-grid.min.css" rel="stylesheet">
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">LANDFIRE-Powered Landscape Assessment</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./past.html" aria-current="page">
+ <span class="menu-text">Past</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./present.html">
+ <span class="menu-text">Present</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./comparing.html">
+ <span class="menu-text">Comparing</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#top-10-biophysical-settings" id="toc-top-10-biophysical-settings" class="nav-link" data-scroll-target="#top-10-biophysical-settings">Top 10 Biophysical Settings</a></li>
+  <li><a href="#most-prevalent-biophysical-settings" id="toc-most-prevalent-biophysical-settings" class="nav-link" data-scroll-target="#most-prevalent-biophysical-settings">Most Prevalent Biophysical Settings</a></li>
+  <li><a href="#historic-annual-acres-burned-per-ecosystem" id="toc-historic-annual-acres-burned-per-ecosystem" class="nav-link" data-scroll-target="#historic-annual-acres-burned-per-ecosystem">Historic Annual Acres Burned (per ecosystem)</a></li>
+  <li><a href="#top-historical-fire-regimes" id="toc-top-historical-fire-regimes" class="nav-link" data-scroll-target="#top-historical-fire-regimes">Top Historical Fire Regimes</a></li>
+  <li><a href="#historical-disturbances-per-ecosystem" id="toc-historical-disturbances-per-ecosystem" class="nav-link" data-scroll-target="#historical-disturbances-per-ecosystem">Historical Disturbances (per ecosystem)</a></li>
+  <li><a href="#data-table" id="toc-data-table" class="nav-link" data-scroll-target="#data-table">Data Table</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Past</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>LANDFIRE’s Biophysical Settings (BpSs, aka “Historical Ecosystems”) represent:</p>
+<blockquote class="blockquote">
+<p>“<em>…the vegetation system that may have been dominant on the landscape prior to Euro-American settlement. BpS models are based on both the current biophysical environment and an approximation of the historical disturbance regime</em>.”</p>
+<p>— <a href="https://landfire.gov/bps.php" target="blank">Read more</a>.</p>
+</blockquote>
+<p>Check out this 3-minute tutorial for a quick refresher on the <a href="https://youtu.be/xjaWJCe7udQ" target="blank">basics of Biophysical Settings Models</a>.</p>
+<p>Use this page as a starting point to explore the most prevalent BpSs in the SRFSN Wyoming Sagebrush Subregion. In addition to the charts and maps, the historical disturbance data can be directly accessed using this site.</p>
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+</section>
+<section id="top-10-biophysical-settings" class="level2">
+<h2 class="anchored" data-anchor-id="top-10-biophysical-settings">Top 10 Biophysical Settings</h2>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="past_files/figure-html/bps chart-1.png" class="img-fluid" width="960"></p>
+</div>
+</div>
+</section>
+<section id="most-prevalent-biophysical-settings" class="level2">
+<h2 class="anchored" data-anchor-id="most-prevalent-biophysical-settings">Most Prevalent Biophysical Settings</h2>
+<p><img src="images/bps.jpg" class="img-fluid" style="width:100.0%"></p>
+<p><br></p>
+</section>
+<section id="historic-annual-acres-burned-per-ecosystem" class="level2">
+<h2 class="anchored" data-anchor-id="historic-annual-acres-burned-per-ecosystem">Historic Annual Acres Burned (per ecosystem)</h2>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="past_files/figure-html/fire bar-1.png" class="img-fluid" width="960"></p>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="top-historical-fire-regimes" class="level2">
+<h2 class="anchored" data-anchor-id="top-historical-fire-regimes">Top Historical Fire Regimes</h2>
+<p><img src="images/mfri.jpg" class="img-fluid" style="width:100.0%"></p>
+</section>
+<section id="historical-disturbances-per-ecosystem" class="level2">
+<h2 class="anchored" data-anchor-id="historical-disturbances-per-ecosystem">Historical Disturbances (per ecosystem)</h2>
+<div class="cell">
+<div class="cell-output-display no-overflow-x">
+<div class="container-fluid crosstalk-bscols">
+<div class="row">
+<div class="col-xs-3">
+<div id="BP" class="form-group crosstalk-input-select crosstalk-input">
+<label class="control-label" for="BP">Select ecosystem</label>
+<div>
+<select></select>
+<script type="application/json" data-for="BP">{
+  "items": {
+    "value": ["Apacherian-Chihuahuan Semi-Desert Grassland and Steppe", "Central Mixedgrass Prairie", "Chihuahuan-Sonoran Desert Bottomland and Swale Grassland", "Chihuahuan Creosotebush Desert Scrub", "Chihuahuan Gypsophilous Grassland and Steppe", "Chihuahuan Loamy Plains Desert Grassland", "Chihuahuan Mixed Desert and Thorn Scrub - Shrubland", "Chihuahuan Mixed Desert and Thorn Scrub - Steppe", "Chihuahuan Mixed Salt Desert Scrub", "Chihuahuan Sandy Plains Semi-Desert Grassland", "Chihuahuan Succulent Desert Scrub", "Colorado Plateau Blackbrush-Mormon-tea Shrubland", "Colorado Plateau Mixed Low Sagebrush Shrubland", "Colorado Plateau Pinyon-Juniper Shrubland", "Colorado Plateau Pinyon-Juniper Woodland", "Inter-Mountain Basins Aspen-Mixed Conifer Forest and Woodland", "Inter-Mountain Basins Aspen-Mixed Conifer Forest and Woodland - High Elevation", "Inter-Mountain Basins Aspen-Mixed Conifer Forest and Woodland - Low Elevation", "Inter-Mountain Basins Big Sagebrush Shrubland - Basin Big Sagebrush", "Inter-Mountain Basins Big Sagebrush Shrubland - Semi-Desert", "Inter-Mountain Basins Big Sagebrush Shrubland - Upland", "Inter-Mountain Basins Big Sagebrush Shrubland - Wyoming Big Sagebrush", "Inter-Mountain Basins Big Sagebrush Steppe", "Inter-Mountain Basins Curl-leaf Mountain Mahogany Woodland and Shrubland", "Inter-Mountain Basins Greasewood Flat", "Inter-Mountain Basins Juniper Savanna", "Inter-Mountain Basins Mat Saltbush Shrubland", "Inter-Mountain Basins Mixed Salt Desert Scrub", "Inter-Mountain Basins Montane Sagebrush Steppe", "Inter-Mountain Basins Montane Sagebrush Steppe - Low Sagebrush", "Inter-Mountain Basins Montane Sagebrush Steppe - Mountain Big Sagebrush", "Inter-Mountain Basins Semi-Desert Grassland", "Inter-Mountain Basins Semi-Desert Shrub-Steppe", "Madrean Encinal", "Madrean Juniper Savanna", "Madrean Lower Montane Pine-Oak Forest and Woodland", "Madrean Pinyon-Juniper Woodland", "Middle Rocky Mountain Montane Douglas-fir Forest and Woodland", "Mogollon Chaparral", "North American Warm Desert Riparian Systems", "Northern Rocky Mountain Lower Montane-Foothill-Valley Grassland", "Northern Rocky Mountain Subalpine-Upper Montane Grassland", "Northwestern Great Plains-Black Hills Ponderosa Pine Woodland and Savanna - Low Elevation Woodland", "Northwestern Great Plains-Black Hills Ponderosa Pine Woodland and Savanna - Savanna", "Northwestern Great Plains Highland White Spruce Woodland", "Northwestern Great Plains Mixedgrass Prairie", "Northwestern Great Plains Shrubland", "Rocky Mountain Alpine Dwarf-Shrubland", "Rocky Mountain Alpine Fell-Field", "Rocky Mountain Alpine Turf", "Rocky Mountain Aspen Forest and Woodland", "Rocky Mountain Bigtooth Maple Ravine Woodland", "Rocky Mountain Foothill Limber Pine-Juniper Woodland", "Rocky Mountain Gambel Oak-Mixed Montane Shrubland", "Rocky Mountain Lodgepole Pine Forest", "Rocky Mountain Lower Montane-Foothill Shrubland", "Rocky Mountain Lower Montane-Foothill Shrubland - No True Mountain Mahogany", "Rocky Mountain Lower Montane-Foothill Shrubland - True Mountain Mahogany", "Rocky Mountain Montane Riparian Systems", "Rocky Mountain Subalpine-Montane Limber-Bristlecone Pine Woodland", "Rocky Mountain Subalpine-Montane Mesic Meadow", "Rocky Mountain Subalpine Dry-Mesic Spruce-Fir Forest and Woodland", "Rocky Mountain Subalpine Mesic-Wet Spruce-Fir Forest and Woodland", "Rocky Mountain Subalpine/Upper Montane Riparian Systems", "Sonora-Mojave Semi-Desert Chaparral", "Southern Colorado Plateau Sand Shrubland", "Southern Rocky Mountain Dry-Mesic Montane Mixed Conifer Forest and Woodland", "Southern Rocky Mountain Juniper Woodland and Savanna", "Southern Rocky Mountain Mesic Montane Mixed Conifer Forest and Woodland", "Southern Rocky Mountain Montane-Subalpine Grassland", "Southern Rocky Mountain Pinyon-Juniper Woodland", "Southern Rocky Mountain Ponderosa Pine Savanna", "Southern Rocky Mountain Ponderosa Pine Savanna - North", "Southern Rocky Mountain Ponderosa Pine Savanna - South", "Southern Rocky Mountain Ponderosa Pine Woodland", "Southern Rocky Mountain Ponderosa Pine Woodland - North", "Southern Rocky Mountain Ponderosa Pine Woodland - South", "Western Great Plains Depressional Wetland Systems", "Western Great Plains Floodplain Systems", "Western Great Plains Foothill and Piedmont Grassland", "Western Great Plains Sand Prairie", "Western Great Plains Sandhill Steppe", "Western Great Plains Shortgrass Prairie", "Western Great Plains Wooded Draw and Ravine", "Wyoming Basins Dwarf Sagebrush Shrubland and Steppe"],
+    "label": ["Apacherian-Chihuahuan Semi-Desert Grassland and Steppe", "Central Mixedgrass Prairie", "Chihuahuan-Sonoran Desert Bottomland and Swale Grassland", "Chihuahuan Creosotebush Desert Scrub", "Chihuahuan Gypsophilous Grassland and Steppe", "Chihuahuan Loamy Plains Desert Grassland", "Chihuahuan Mixed Desert and Thorn Scrub - Shrubland", "Chihuahuan Mixed Desert and Thorn Scrub - Steppe", "Chihuahuan Mixed Salt Desert Scrub", "Chihuahuan Sandy Plains Semi-Desert Grassland", "Chihuahuan Succulent Desert Scrub", "Colorado Plateau Blackbrush-Mormon-tea Shrubland", "Colorado Plateau Mixed Low Sagebrush Shrubland", "Colorado Plateau Pinyon-Juniper Shrubland", "Colorado Plateau Pinyon-Juniper Woodland", "Inter-Mountain Basins Aspen-Mixed Conifer Forest and Woodland", "Inter-Mountain Basins Aspen-Mixed Conifer Forest and Woodland - High Elevation", "Inter-Mountain Basins Aspen-Mixed Conifer Forest and Woodland - Low Elevation", "Inter-Mountain Basins Big Sagebrush Shrubland - Basin Big Sagebrush", "Inter-Mountain Basins Big Sagebrush Shrubland - Semi-Desert", "Inter-Mountain Basins Big Sagebrush Shrubland - Upland", "Inter-Mountain Basins Big Sagebrush Shrubland - Wyoming Big Sagebrush", "Inter-Mountain Basins Big Sagebrush Steppe", "Inter-Mountain Basins Curl-leaf Mountain Mahogany Woodland and Shrubland", "Inter-Mountain Basins Greasewood Flat", "Inter-Mountain Basins Juniper Savanna", "Inter-Mountain Basins Mat Saltbush Shrubland", "Inter-Mountain Basins Mixed Salt Desert Scrub", "Inter-Mountain Basins Montane Sagebrush Steppe", "Inter-Mountain Basins Montane Sagebrush Steppe - Low Sagebrush", "Inter-Mountain Basins Montane Sagebrush Steppe - Mountain Big Sagebrush", "Inter-Mountain Basins Semi-Desert Grassland", "Inter-Mountain Basins Semi-Desert Shrub-Steppe", "Madrean Encinal", "Madrean Juniper Savanna", "Madrean Lower Montane Pine-Oak Forest and Woodland", "Madrean Pinyon-Juniper Woodland", "Middle Rocky Mountain Montane Douglas-fir Forest and Woodland", "Mogollon Chaparral", "North American Warm Desert Riparian Systems", "Northern Rocky Mountain Lower Montane-Foothill-Valley Grassland", "Northern Rocky Mountain Subalpine-Upper Montane Grassland", "Northwestern Great Plains-Black Hills Ponderosa Pine Woodland and Savanna - Low Elevation Woodland", "Northwestern Great Plains-Black Hills Ponderosa Pine Woodland and Savanna - Savanna", "Northwestern Great Plains Highland White Spruce Woodland", "Northwestern Great Plains Mixedgrass Prairie", "Northwestern Great Plains Shrubland", "Rocky Mountain Alpine Dwarf-Shrubland", "Rocky Mountain Alpine Fell-Field", "Rocky Mountain Alpine Turf", "Rocky Mountain Aspen Forest and Woodland", "Rocky Mountain Bigtooth Maple Ravine Woodland", "Rocky Mountain Foothill Limber Pine-Juniper Woodland", "Rocky Mountain Gambel Oak-Mixed Montane Shrubland", "Rocky Mountain Lodgepole Pine Forest", "Rocky Mountain Lower Montane-Foothill Shrubland", "Rocky Mountain Lower Montane-Foothill Shrubland - No True Mountain Mahogany", "Rocky Mountain Lower Montane-Foothill Shrubland - True Mountain Mahogany", "Rocky Mountain Montane Riparian Systems", "Rocky Mountain Subalpine-Montane Limber-Bristlecone Pine Woodland", "Rocky Mountain Subalpine-Montane Mesic Meadow", "Rocky Mountain Subalpine Dry-Mesic Spruce-Fir Forest and Woodland", "Rocky Mountain Subalpine Mesic-Wet Spruce-Fir Forest and Woodland", "Rocky Mountain Subalpine/Upper Montane Riparian Systems", "Sonora-Mojave Semi-Desert Chaparral", "Southern Colorado Plateau Sand Shrubland", "Southern Rocky Mountain Dry-Mesic Montane Mixed Conifer Forest and Woodland", "Southern Rocky Mountain Juniper Woodland and Savanna", "Southern Rocky Mountain Mesic Montane Mixed Conifer Forest and Woodland", "Southern Rocky Mountain Montane-Subalpine Grassland", "Southern Rocky Mountain Pinyon-Juniper Woodland", "Southern Rocky Mountain Ponderosa Pine Savanna", "Southern Rocky Mountain Ponderosa Pine Savanna - North", "Southern Rocky Mountain Ponderosa Pine Savanna - South", "Southern Rocky Mountain Ponderosa Pine Woodland", "Southern Rocky Mountain Ponderosa Pine Woodland - North", "Southern Rocky Mountain Ponderosa Pine Woodland - South", "Western Great Plains Depressional Wetland Systems", "Western Great Plains Floodplain Systems", "Western Great Plains Foothill and Piedmont Grassland", "Western Great Plains Sand Prairie", "Western Great Plains Sandhill Steppe", "Western Great Plains Shortgrass Prairie", "Western Great Plains Wooded Draw and Ravine", "Wyoming Basins Dwarf Sagebrush Shrubland and Steppe"]
+  },
+  "map": {
+    "Apacherian-Chihuahuan Semi-Desert Grassland and Steppe": ["1", "2", "3", "4"],
+    "Central Mixedgrass Prairie": ["5", "6", "7", "8"],
+    "Chihuahuan-Sonoran Desert Bottomland and Swale Grassland": ["28"],
+    "Chihuahuan Creosotebush Desert Scrub": ["9", "10"],
+    "Chihuahuan Gypsophilous Grassland and Steppe": ["11", "12"],
+    "Chihuahuan Loamy Plains Desert Grassland": ["13", "14"],
+    "Chihuahuan Mixed Desert and Thorn Scrub - Shrubland": ["15", "16", "17"],
+    "Chihuahuan Mixed Desert and Thorn Scrub - Steppe": ["18", "19"],
+    "Chihuahuan Mixed Salt Desert Scrub": ["20", "21", "22"],
+    "Chihuahuan Sandy Plains Semi-Desert Grassland": ["23", "24", "25"],
+    "Chihuahuan Succulent Desert Scrub": ["26", "27"],
+    "Colorado Plateau Blackbrush-Mormon-tea Shrubland": ["29", "30", "31"],
+    "Colorado Plateau Mixed Low Sagebrush Shrubland": ["32", "33", "34"],
+    "Colorado Plateau Pinyon-Juniper Shrubland": ["35", "36", "37", "38", "39", "40"],
+    "Colorado Plateau Pinyon-Juniper Woodland": ["41", "42", "43", "44", "45", "46"],
+    "Inter-Mountain Basins Aspen-Mixed Conifer Forest and Woodland": ["47", "48", "49", "50"],
+    "Inter-Mountain Basins Aspen-Mixed Conifer Forest and Woodland - High Elevation": ["51", "52", "53", "54"],
+    "Inter-Mountain Basins Aspen-Mixed Conifer Forest and Woodland - Low Elevation": ["55", "56", "57"],
+    "Inter-Mountain Basins Big Sagebrush Shrubland - Basin Big Sagebrush": ["58", "59"],
+    "Inter-Mountain Basins Big Sagebrush Shrubland - Semi-Desert": ["60", "61"],
+    "Inter-Mountain Basins Big Sagebrush Shrubland - Upland": ["62", "63"],
+    "Inter-Mountain Basins Big Sagebrush Shrubland - Wyoming Big Sagebrush": ["64", "65", "66", "67"],
+    "Inter-Mountain Basins Big Sagebrush Steppe": ["68", "69", "70", "71"],
+    "Inter-Mountain Basins Curl-leaf Mountain Mahogany Woodland and Shrubland": ["72", "73", "74", "75", "76"],
+    "Inter-Mountain Basins Greasewood Flat": ["77", "78"],
+    "Inter-Mountain Basins Juniper Savanna": ["79", "80", "81"],
+    "Inter-Mountain Basins Mat Saltbush Shrubland": ["82", "83"],
+    "Inter-Mountain Basins Mixed Salt Desert Scrub": ["84", "85"],
+    "Inter-Mountain Basins Montane Sagebrush Steppe": ["86", "87", "88", "89"],
+    "Inter-Mountain Basins Montane Sagebrush Steppe - Low Sagebrush": ["90"],
+    "Inter-Mountain Basins Montane Sagebrush Steppe - Mountain Big Sagebrush": ["91", "92"],
+    "Inter-Mountain Basins Semi-Desert Grassland": ["93", "94", "95", "96"],
+    "Inter-Mountain Basins Semi-Desert Shrub-Steppe": ["97", "98", "99"],
+    "Madrean Encinal": ["100", "101", "102", "103"],
+    "Madrean Juniper Savanna": ["104", "105", "106", "107"],
+    "Madrean Lower Montane Pine-Oak Forest and Woodland": ["108", "109", "110"],
+    "Madrean Pinyon-Juniper Woodland": ["111", "112", "113", "114"],
+    "Middle Rocky Mountain Montane Douglas-fir Forest and Woodland": ["115", "116", "117", "118", "119"],
+    "Mogollon Chaparral": ["120", "121", "122", "123"],
+    "North American Warm Desert Riparian Systems": ["124", "125", "126"],
+    "Northern Rocky Mountain Lower Montane-Foothill-Valley Grassland": ["127", "128", "129"],
+    "Northern Rocky Mountain Subalpine-Upper Montane Grassland": ["130"],
+    "Northwestern Great Plains-Black Hills Ponderosa Pine Woodland and Savanna - Low Elevation Woodland": ["144", "145", "146", "147"],
+    "Northwestern Great Plains-Black Hills Ponderosa Pine Woodland and Savanna - Savanna": ["148", "149", "150", "151"],
+    "Northwestern Great Plains Highland White Spruce Woodland": ["131", "132", "133", "134"],
+    "Northwestern Great Plains Mixedgrass Prairie": ["135", "136", "137", "138", "139"],
+    "Northwestern Great Plains Shrubland": ["140", "141", "142", "143"],
+    "Rocky Mountain Alpine Dwarf-Shrubland": ["152", "153", "154"],
+    "Rocky Mountain Alpine Fell-Field": ["155", "156", "157"],
+    "Rocky Mountain Alpine Turf": ["158", "159", "160"],
+    "Rocky Mountain Aspen Forest and Woodland": ["161", "162", "163", "164", "165", "166"],
+    "Rocky Mountain Bigtooth Maple Ravine Woodland": ["167", "168", "169"],
+    "Rocky Mountain Foothill Limber Pine-Juniper Woodland": ["170", "171"],
+    "Rocky Mountain Gambel Oak-Mixed Montane Shrubland": ["172", "173"],
+    "Rocky Mountain Lodgepole Pine Forest": ["174", "175", "176", "177", "178"],
+    "Rocky Mountain Lower Montane-Foothill Shrubland": ["179", "180", "181", "182", "183"],
+    "Rocky Mountain Lower Montane-Foothill Shrubland - No True Mountain Mahogany": ["184", "185"],
+    "Rocky Mountain Lower Montane-Foothill Shrubland - True Mountain Mahogany": ["186", "187", "188"],
+    "Rocky Mountain Montane Riparian Systems": ["189", "190", "191", "192", "193"],
+    "Rocky Mountain Subalpine-Montane Limber-Bristlecone Pine Woodland": ["204", "205", "206", "207"],
+    "Rocky Mountain Subalpine-Montane Mesic Meadow": ["208", "209"],
+    "Rocky Mountain Subalpine Dry-Mesic Spruce-Fir Forest and Woodland": ["194", "195", "196", "197", "198"],
+    "Rocky Mountain Subalpine Mesic-Wet Spruce-Fir Forest and Woodland": ["199", "200", "201", "202", "203"],
+    "Rocky Mountain Subalpine/Upper Montane Riparian Systems": ["210", "211", "212", "213", "214", "215"],
+    "Sonora-Mojave Semi-Desert Chaparral": ["216"],
+    "Southern Colorado Plateau Sand Shrubland": ["217", "218"],
+    "Southern Rocky Mountain Dry-Mesic Montane Mixed Conifer Forest and Woodland": ["219", "220", "221", "222", "223", "224"],
+    "Southern Rocky Mountain Juniper Woodland and Savanna": ["225", "226", "227", "228", "229"],
+    "Southern Rocky Mountain Mesic Montane Mixed Conifer Forest and Woodland": ["230", "231", "232", "233", "234", "235"],
+    "Southern Rocky Mountain Montane-Subalpine Grassland": ["236", "237", "238"],
+    "Southern Rocky Mountain Pinyon-Juniper Woodland": ["239", "240", "241", "242", "243", "244", "245"],
+    "Southern Rocky Mountain Ponderosa Pine Savanna": ["246", "247", "248", "249", "250", "251"],
+    "Southern Rocky Mountain Ponderosa Pine Savanna - North": ["252", "253", "254", "255"],
+    "Southern Rocky Mountain Ponderosa Pine Savanna - South": ["256", "257", "258", "259", "260"],
+    "Southern Rocky Mountain Ponderosa Pine Woodland": ["261", "262", "263", "264", "265"],
+    "Southern Rocky Mountain Ponderosa Pine Woodland - North": ["266", "267", "268"],
+    "Southern Rocky Mountain Ponderosa Pine Woodland - South": ["269", "270", "271", "272"],
+    "Western Great Plains Depressional Wetland Systems": ["273", "274", "275"],
+    "Western Great Plains Floodplain Systems": ["276", "277", "278", "279", "280", "281"],
+    "Western Great Plains Foothill and Piedmont Grassland": ["282", "283", "284", "285", "286"],
+    "Western Great Plains Sand Prairie": ["287", "288", "289"],
+    "Western Great Plains Sandhill Steppe": ["290", "291", "292", "293"],
+    "Western Great Plains Shortgrass Prairie": ["294", "295", "296", "297", "298"],
+    "Western Great Plains Wooded Draw and Ravine": ["299", "300", "301", "302", "303", "304"],
+    "Wyoming Basins Dwarf Sagebrush Shrubland and Steppe": ["305", "306"]
+  },
+  "group": ["SharedData29c48295"]
+}</script>
+</div>
+</div>
+</div>
+<div class="col-xs-10">
+<div id="htmlwidget-435cdacb06924b784d96" style="width:100%;height:319px;" class="plotly html-widget "></div>
+<script type="application/json" data-for="htmlwidget-435cdacb06924b784d96">{"x":{"data":[{"x":[88,1,0,117,51,3,5,2,2,5,2,0,4,1,8,1,10,25,53,1,1,18,321,7,161,8,5,13,2,2,3,17,101,9,2,3,5,3,5,1,6588,10614,9824,4407,865,2971,22944,62250,57938,36087,249,1760,1507,5,35,7991,2495,11268,1840,3,3,1098,775,160,160,1648,800,348,33898,3668,3405,106,45,56,61,3,534,1523,22,28,35,5,138,72,1590,9446,1500,43879,5498,19,717,3623,1623,14,985,1407,3660,2296,27073,200,300,1134,182,0,0,0,0,1,1,3,0,0,0,0,55,197,102,841,647,4,1,99,1,17,8,17,1672,239,559,64,1,3,1,7,44,94937,15278,40591,17703,392,133,519,390,12,1,1,18,259,42,1015,2,9,45,89,679,685,697,169,802,1629,2981,11561,19149,19155,1652,4207,0,0,0,34,153,9095,30732,1805,19410,12204,2912,0,455,11523,39,7161,2847,38,17,0,3,1,363,92870,4836,15079,383572,2378,8571,11934,27245,10504,67,236,344,761,295,434,176,3,159,301,1210,64,10,39721,1931,6374,165429,0,14,23,422,1705,42263,8790,82746,216,148,520,609,262,4108,5571,212,8538,6157,8058,60,42489,45578,42636,263,205,1133,1074,1186,1230,7392,429,299,111,1049,32086,3,1,247,3,80,2,5,0,5,1,9258,19609,7364,142416,25,140,44,735,4345,247,7493,951,1,0,0,435,362,113,122,54,1719,483,81633,566,8721,1396,3187,15,1033,2081,22,126,356,17,35171,5985,3115,1581,14,5,9,21,3,3,566,59],"y":[3,6,7,8,4,5,6,8,5,8,6,8,6,8,5,6,8,5,8,3,6,8,5,6,8,6,8,6,3,6,8,3,4,6,1,2,3,6,7,8,1,2,3,6,7,8,2,3,6,7,2,3,6,8,2,3,6,6,8,6,8,6,8,2,4,6,8,2,4,6,8,3,4,6,7,8,6,8,3,6,7,6,8,6,8,2,4,6,8,6,2,6,3,4,6,8,2,6,8,3,6,7,8,3,6,7,8,3,6,7,3,6,7,8,2,3,6,7,8,1,3,6,8,5,6,8,4,6,8,6,2,3,6,7,2,4,5,6,8,4,5,6,8,2,3,6,7,2,6,7,8,5,6,8,5,6,8,5,6,8,2,3,4,6,7,8,3,6,8,2,6,3,6,1,2,6,7,8,1,3,4,6,8,6,8,4,6,8,3,5,6,7,8,1,2,3,6,8,1,2,3,6,8,3,6,7,8,3,6,3,4,5,6,7,8,6,6,8,1,2,3,6,7,8,1,2,3,6,7,1,2,3,6,7,8,1,6,7,1,2,3,5,6,7,8,2,3,4,6,7,8,2,4,6,7,2,4,6,7,8,2,3,6,7,8,3,6,7,2,6,7,8,4,6,8,3,4,5,6,7,8,3,4,5,6,8,4,5,6,4,5,6,8,3,4,5,6,8,2,3,4,5,6,7,6,8],"text":"","key":["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64","65","66","67","68","69","70","71","72","73","74","75","76","77","78","79","80","81","82","83","84","85","86","87","88","89","90","91","92","93","94","95","96","97","98","99","100","101","102","103","104","105","106","107","108","109","110","111","112","113","114","115","116","117","118","119","120","121","122","123","124","125","126","127","128","129","130","131","132","133","134","135","136","137","138","139","140","141","142","143","144","145","146","147","148","149","150","151","152","153","154","155","156","157","158","159","160","161","162","163","164","165","166","167","168","169","170","171","172","173","174","175","176","177","178","179","180","181","182","183","184","185","186","187","188","189","190","191","192","193","194","195","196","197","198","199","200","201","202","203","204","205","206","207","208","209","210","211","212","213","214","215","216","217","218","219","220","221","222","223","224","225","226","227","228","229","230","231","232","233","234","235","236","237","238","239","240","241","242","243","244","245","246","247","248","249","250","251","252","253","254","255","256","257","258","259","260","261","262","263","264","265","266","267","268","269","270","271","272","273","274","275","276","277","278","279","280","281","282","283","284","285","286","287","288","289","290","291","292","293","294","295","296","297","298","299","300","301","302","303","304","305","306"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,0,0,1)","opacity":1,"size":11.3385826771654,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(0,0,0,1)"}},"hoveron":"points","set":"SharedData29c48295","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","_isNestedKey":false,"frame":null}],"layout":{"margin":{"t":39.7366818873668,"r":7.30593607305936,"b":36.1567732115677,"l":162.922374429224},"plot_bgcolor":"rgba(255,255,255,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"title":{"text":"Annual historical disturbances","font":{"color":"rgba(0,0,0,1)","family":"","size":17.5342465753425},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-19178.6,402750.6],"tickmode":"array","ticktext":["0","100,000","200,000","300,000","400,000"],"tickvals":[0,100000,200000,300000,400000],"categoryorder":"array","categoryarray":["0","100,000","200,000","300,000","400,000"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":{"text":"Acres","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.4,8.6],"tickmode":"array","ticktext":["Competition or Maintenance","Insect or Disease","Mixed Fire","Native Grazing","Optional Types","Replacement Fire","Surface Fire","Wind or Weather or Stress"],"tickvals":[1,2,3,4,5,6,7,8],"categoryorder":"array","categoryarray":["Competition or Maintenance","Insect or Disease","Mixed Fire","Native Grazing","Optional Types","Replacement Fire","Surface Fire","Wind or Weather or Stress"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":"transparent","line":{"color":"rgba(51,51,51,1)","width":0.66417600664176,"linetype":"solid"},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.689497716895}},"hovermode":"closest","width":815,"barmode":"relative","dragmode":"zoom"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"58cc2ff66182":{"x":{},"y":{},"type":"scatter"}},"cur_data":"58cc2ff66182","visdat":{"58cc2ff66182":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0,"ctGroups":["SharedData29c48295"]},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="data-table" class="level2">
+<h2 class="anchored" data-anchor-id="data-table">Data Table</h2>
+<div class="cell">
+<div class="cell-output-display">
+
+<table class="table table-striped table-hover table-condensed" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:right;"> ZONE </th>
+   <th style="text-align:left;"> BPS_MODEL </th>
+   <th style="text-align:left;"> BPS_NAME </th>
+   <th style="text-align:left;"> GROUPVEG </th>
+   <th style="text-align:right;"> FRI_REPLAC </th>
+   <th style="text-align:right;"> FRI_MIXED </th>
+   <th style="text-align:right;"> FRI_SURFAC </th>
+   <th style="text-align:left;"> FRG_NEW </th>
+   <th style="text-align:right;"> ACRES </th>
+   <th style="text-align:right;"> REL_PERCENT </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 10550_15_28 </td>
+   <td style="text-align:left;"> Rocky Mountain Subalpine Dry-Mesic Spruce-Fir Forest and Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 199 </td>
+   <td style="text-align:right;"> 435 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-B </td>
+   <td style="text-align:right;"> 5,231,487 </td>
+   <td style="text-align:right;"> 14.5 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 10610_22_27_28 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Aspen-Mixed Conifer Forest and Woodland </td>
+   <td style="text-align:left;"> Hardwood-Conifer </td>
+   <td style="text-align:right;"> 78 </td>
+   <td style="text-align:right;"> 73 </td>
+   <td style="text-align:right;"> 126 </td>
+   <td style="text-align:left;"> I-C </td>
+   <td style="text-align:right;"> 4,466,687 </td>
+   <td style="text-align:right;"> 12.4 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 10540_28 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Ponderosa Pine Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 505 </td>
+   <td style="text-align:right;"> 159 </td>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:left;"> I-C </td>
+   <td style="text-align:right;"> 2,585,065 </td>
+   <td style="text-align:right;"> 7.2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 10510_28 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Dry-Mesic Montane Mixed Conifer Forest and Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 325 </td>
+   <td style="text-align:right;"> 54 </td>
+   <td style="text-align:right;"> 32 </td>
+   <td style="text-align:left;"> I-C </td>
+   <td style="text-align:right;"> 2,110,732 </td>
+   <td style="text-align:right;"> 5.9 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 10500_16_23_28 </td>
+   <td style="text-align:left;"> Rocky Mountain Lodgepole Pine Forest </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 152 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 640 </td>
+   <td style="text-align:left;"> IV-B </td>
+   <td style="text-align:right;"> 1,862,385 </td>
+   <td style="text-align:right;"> 5.2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 10160_15_28 </td>
+   <td style="text-align:left;"> Colorado Plateau Pinyon-Juniper Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 430 </td>
+   <td style="text-align:right;"> 194 </td>
+   <td style="text-align:right;"> 2,245 </td>
+   <td style="text-align:left;"> III-B </td>
+   <td style="text-align:right;"> 1,708,311 </td>
+   <td style="text-align:right;"> 4.7 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 10110_28 </td>
+   <td style="text-align:left;"> Rocky Mountain Aspen Forest and Woodland </td>
+   <td style="text-align:left;"> Hardwood </td>
+   <td style="text-align:right;"> 145 </td>
+   <td style="text-align:right;"> 1,732 </td>
+   <td style="text-align:right;"> 844 </td>
+   <td style="text-align:left;"> IV-B </td>
+   <td style="text-align:right;"> 1,460,557 </td>
+   <td style="text-align:right;"> 4.1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 11260_6_12_17_18_28 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Montane Sagebrush Steppe </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 49 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-A </td>
+   <td style="text-align:right;"> 1,428,792 </td>
+   <td style="text-align:right;"> 4.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 10520_28 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Mesic Montane Mixed Conifer Forest and Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 202 </td>
+   <td style="text-align:right;"> 144 </td>
+   <td style="text-align:right;"> 153 </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 1,204,503 </td>
+   <td style="text-align:right;"> 3.3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 11590_28 </td>
+   <td style="text-align:left;"> Rocky Mountain Montane Riparian Systems </td>
+   <td style="text-align:left;"> Riparian </td>
+   <td style="text-align:right;"> 270 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 79 </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 960,368 </td>
+   <td style="text-align:right;"> 2.7 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 11460_15_16_23_24_25_28 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Montane-Subalpine Grassland </td>
+   <td style="text-align:left;"> Grassland </td>
+   <td style="text-align:right;"> 20 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 21 </td>
+   <td style="text-align:left;"> I-B </td>
+   <td style="text-align:right;"> 875,732 </td>
+   <td style="text-align:right;"> 2.4 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> Barren-Rock/Sand/Clay </td>
+   <td style="text-align:left;"> Barren-Rock/Sand/Clay </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> 840,018 </td>
+   <td style="text-align:right;"> 2.3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 10801_21_22_28 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Big Sagebrush Shrubland-Basin Big Sagebrush </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 72 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-A </td>
+   <td style="text-align:right;"> 817,776 </td>
+   <td style="text-align:right;"> 2.3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 11070_23_24 </td>
+   <td style="text-align:left;"> Rocky Mountain Gambel Oak-Mixed Montane Shrubland </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 51 </td>
+   <td style="text-align:right;"> 150 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 734,274 </td>
+   <td style="text-align:right;"> 2.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 11070_25_28 </td>
+   <td style="text-align:left;"> Rocky Mountain Gambel Oak-Mixed Montane Shrubland </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 50 </td>
+   <td style="text-align:right;"> 171 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 716,291 </td>
+   <td style="text-align:right;"> 2.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:left;"> 11260_20_29_33 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Montane Sagebrush Steppe </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 50 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-A </td>
+   <td style="text-align:right;"> 566,031 </td>
+   <td style="text-align:right;"> 1.6 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 10110_16_23_24 </td>
+   <td style="text-align:left;"> Rocky Mountain Aspen Forest and Woodland </td>
+   <td style="text-align:left;"> Hardwood </td>
+   <td style="text-align:right;"> 59 </td>
+   <td style="text-align:right;"> 50 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> I-C </td>
+   <td style="text-align:right;"> 529,162 </td>
+   <td style="text-align:right;"> 1.5 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:left;"> 11410_29_30 </td>
+   <td style="text-align:left;"> Northwestern Great Plains Mixedgrass Prairie </td>
+   <td style="text-align:left;"> Grassland </td>
+   <td style="text-align:right;"> 13 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> II-B </td>
+   <td style="text-align:right;"> 548,935 </td>
+   <td style="text-align:right;"> 1.5 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 11600_15_28 </td>
+   <td style="text-align:left;"> Rocky Mountain Subalpine/Upper Montane Riparian Systems </td>
+   <td style="text-align:left;"> Riparian </td>
+   <td style="text-align:right;"> 273 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 80 </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 465,859 </td>
+   <td style="text-align:right;"> 1.3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 11430_9_19_21_28 </td>
+   <td style="text-align:left;"> Rocky Mountain Alpine Fell-Field </td>
+   <td style="text-align:left;"> Grassland </td>
+   <td style="text-align:right;"> 525 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-B </td>
+   <td style="text-align:right;"> 361,030 </td>
+   <td style="text-align:right;"> 1.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 10540_16_23_24 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Ponderosa Pine Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 280 </td>
+   <td style="text-align:right;"> 226 </td>
+   <td style="text-align:right;"> 20 </td>
+   <td style="text-align:left;"> I-C </td>
+   <td style="text-align:right;"> 316,460 </td>
+   <td style="text-align:right;"> 0.9 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 11170_13_15_28 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Ponderosa Pine Savanna </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 368 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:left;"> I-B </td>
+   <td style="text-align:right;"> 311,615 </td>
+   <td style="text-align:right;"> 0.9 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:left;"> 11250_20_29_30_31_33 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Big Sagebrush Steppe </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 92 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-A </td>
+   <td style="text-align:right;"> 336,796 </td>
+   <td style="text-align:right;"> 0.9 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:left;"> 11260_22 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Montane Sagebrush Steppe </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 86 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-A </td>
+   <td style="text-align:right;"> 273,656 </td>
+   <td style="text-align:right;"> 0.8 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 10860_13_16_17_18_21_23 </td>
+   <td style="text-align:left;"> Rocky Mountain Lower Montane-Foothill Shrubland </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 102 </td>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> I-C </td>
+   <td style="text-align:right;"> 286,716 </td>
+   <td style="text-align:right;"> 0.8 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 10860_28 </td>
+   <td style="text-align:left;"> Rocky Mountain Lower Montane-Foothill Shrubland </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 73 </td>
+   <td style="text-align:right;"> 210 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 239,078 </td>
+   <td style="text-align:right;"> 0.7 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 11270_28 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Semi-Desert Shrub-Steppe </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 120 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-B </td>
+   <td style="text-align:right;"> 251,428 </td>
+   <td style="text-align:right;"> 0.7 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:left;"> 10540_29 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Ponderosa Pine Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 303 </td>
+   <td style="text-align:right;"> 265 </td>
+   <td style="text-align:right;"> 20 </td>
+   <td style="text-align:left;"> I-C </td>
+   <td style="text-align:right;"> 242,207 </td>
+   <td style="text-align:right;"> 0.7 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:left;"> 10590_27_33 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Pinyon-Juniper Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 327 </td>
+   <td style="text-align:right;"> 406 </td>
+   <td style="text-align:right;"> 566 </td>
+   <td style="text-align:left;"> III-B </td>
+   <td style="text-align:right;"> 245,585 </td>
+   <td style="text-align:right;"> 0.7 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:left;"> 10802_21_22_28 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Big Sagebrush Shrubland-Wyoming Big Sagebrush </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 98 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-A </td>
+   <td style="text-align:right;"> 163,845 </td>
+   <td style="text-align:right;"> 0.5 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 11261_16_23_24 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Montane Sagebrush Steppe-Mountain Big Sagebrush </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 49 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-A </td>
+   <td style="text-align:right;"> 177,769 </td>
+   <td style="text-align:right;"> 0.5 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 11440_12_16_19_28 </td>
+   <td style="text-align:left;"> Rocky Mountain Alpine Turf </td>
+   <td style="text-align:left;"> Grassland </td>
+   <td style="text-align:right;"> 207 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-A </td>
+   <td style="text-align:right;"> 170,531 </td>
+   <td style="text-align:right;"> 0.5 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> Open Water </td>
+   <td style="text-align:left;"> Open Water </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> 155,298 </td>
+   <td style="text-align:right;"> 0.4 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> Perennial Ice/Snow </td>
+   <td style="text-align:left;"> Perennial Ice/Snow </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> 151,485 </td>
+   <td style="text-align:right;"> 0.4 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 10160_16_23_24_25 </td>
+   <td style="text-align:left;"> Colorado Plateau Pinyon-Juniper Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 435 </td>
+   <td style="text-align:right;"> 195 </td>
+   <td style="text-align:right;"> 2,265 </td>
+   <td style="text-align:left;"> III-B </td>
+   <td style="text-align:right;"> 145,524 </td>
+   <td style="text-align:right;"> 0.4 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 10510_15_16_17_22_23_24_25 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Dry-Mesic Montane Mixed Conifer Forest and Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 90 </td>
+   <td style="text-align:right;"> 77 </td>
+   <td style="text-align:right;"> 14 </td>
+   <td style="text-align:left;"> I-B </td>
+   <td style="text-align:right;"> 149,395 </td>
+   <td style="text-align:right;"> 0.4 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 10560_15_28 </td>
+   <td style="text-align:left;"> Rocky Mountain Subalpine Mesic-Wet Spruce-Fir Forest and Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 199 </td>
+   <td style="text-align:right;"> 435 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-B </td>
+   <td style="text-align:right;"> 151,034 </td>
+   <td style="text-align:right;"> 0.4 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 10611_16_23_24 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Aspen-Mixed Conifer Forest and Woodland-Low Elevation </td>
+   <td style="text-align:left;"> Hardwood-Conifer </td>
+   <td style="text-align:right;"> 43 </td>
+   <td style="text-align:right;"> 13 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> I-B </td>
+   <td style="text-align:right;"> 106,906 </td>
+   <td style="text-align:right;"> 0.3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 10612_16_23 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Aspen-Mixed Conifer Forest and Woodland-High Elevation </td>
+   <td style="text-align:left;"> Hardwood-Conifer </td>
+   <td style="text-align:right;"> 70 </td>
+   <td style="text-align:right;"> 60 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> I-C </td>
+   <td style="text-align:right;"> 106,252 </td>
+   <td style="text-align:right;"> 0.3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 11590_16_23_24_26 </td>
+   <td style="text-align:left;"> Rocky Mountain Montane Riparian Systems </td>
+   <td style="text-align:left;"> Riparian </td>
+   <td style="text-align:right;"> 270 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 79 </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 124,023 </td>
+   <td style="text-align:right;"> 0.3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 10010 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Sparsely Vegetated Systems </td>
+   <td style="text-align:left;"> Sparse </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> 95,551 </td>
+   <td style="text-align:right;"> 0.3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 11530_28 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Greasewood Flat </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 204 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-A </td>
+   <td style="text-align:right;"> 98,666 </td>
+   <td style="text-align:right;"> 0.3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:left;"> 10550_29 </td>
+   <td style="text-align:left;"> Rocky Mountain Subalpine Dry-Mesic Spruce-Fir Forest and Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 113 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-B </td>
+   <td style="text-align:right;"> 97,169 </td>
+   <td style="text-align:right;"> 0.3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 11190_24_25 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Juniper Woodland and Savanna </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 503 </td>
+   <td style="text-align:right;"> 217 </td>
+   <td style="text-align:right;"> 32 </td>
+   <td style="text-align:left;"> I-C </td>
+   <td style="text-align:right;"> 94,488 </td>
+   <td style="text-align:right;"> 0.3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:left;"> 11070_27_33 </td>
+   <td style="text-align:left;"> Rocky Mountain Gambel Oak-Mixed Montane Shrubland </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 50 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-A </td>
+   <td style="text-align:right;"> 92,312 </td>
+   <td style="text-align:right;"> 0.3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:left;"> 11470_27_33 </td>
+   <td style="text-align:left;"> Western Great Plains Foothill and Piedmont Grassland </td>
+   <td style="text-align:left;"> Grassland </td>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> II-C </td>
+   <td style="text-align:right;"> 97,047 </td>
+   <td style="text-align:right;"> 0.3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 10720_28 </td>
+   <td style="text-align:left;"> Wyoming Basins Dwarf Sagebrush Shrubland and Steppe </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 125 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-B </td>
+   <td style="text-align:right;"> 70,040 </td>
+   <td style="text-align:right;"> 0.2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 10570_28 </td>
+   <td style="text-align:left;"> Rocky Mountain Subalpine-Montane Limber-Bristlecone Pine Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 499 </td>
+   <td style="text-align:right;"> 202 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> III-B </td>
+   <td style="text-align:right;"> 89,507 </td>
+   <td style="text-align:right;"> 0.2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 11350_15_28 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Semi-Desert Grassland </td>
+   <td style="text-align:left;"> Grassland </td>
+   <td style="text-align:right;"> 77 </td>
+   <td style="text-align:right;"> 37 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> I-C </td>
+   <td style="text-align:right;"> 60,009 </td>
+   <td style="text-align:right;"> 0.2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:left;"> 10510_29 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Dry-Mesic Montane Mixed Conifer Forest and Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 94 </td>
+   <td style="text-align:right;"> 77 </td>
+   <td style="text-align:right;"> 14 </td>
+   <td style="text-align:left;"> I-B </td>
+   <td style="text-align:right;"> 55,531 </td>
+   <td style="text-align:right;"> 0.2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 10540_15_25 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Ponderosa Pine Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 396 </td>
+   <td style="text-align:right;"> 108 </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:left;"> I-B </td>
+   <td style="text-align:right;"> 70,090 </td>
+   <td style="text-align:right;"> 0.2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 10590_25 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Pinyon-Juniper Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 243 </td>
+   <td style="text-align:right;"> 253 </td>
+   <td style="text-align:right;"> 107 </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 85,120 </td>
+   <td style="text-align:right;"> 0.2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:left;"> 10541_27 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Ponderosa Pine Woodland-South </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 346 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:left;"> I-B </td>
+   <td style="text-align:right;"> 84,453 </td>
+   <td style="text-align:right;"> 0.2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 10804_6_12_15_16_17_18_23_24_25 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Big Sagebrush Shrubland-Upland </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 120 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-B </td>
+   <td style="text-align:right;"> 89,339 </td>
+   <td style="text-align:right;"> 0.2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 11470_28 </td>
+   <td style="text-align:left;"> Western Great Plains Foothill and Piedmont Grassland </td>
+   <td style="text-align:left;"> Grassland </td>
+   <td style="text-align:right;"> 12 </td>
+   <td style="text-align:right;"> 79 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> II-B </td>
+   <td style="text-align:right;"> 38,252 </td>
+   <td style="text-align:right;"> 0.1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:left;"> 11590_22 </td>
+   <td style="text-align:left;"> Rocky Mountain Montane Riparian Systems </td>
+   <td style="text-align:left;"> Riparian </td>
+   <td style="text-align:right;"> 271 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 79 </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 43,789 </td>
+   <td style="text-align:right;"> 0.1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 10550_16_23_24 </td>
+   <td style="text-align:left;"> Rocky Mountain Subalpine Dry-Mesic Spruce-Fir Forest and Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 214 </td>
+   <td style="text-align:right;"> 7,242 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-A </td>
+   <td style="text-align:right;"> 32,837 </td>
+   <td style="text-align:right;"> 0.1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 11170_16_23_24 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Ponderosa Pine Savanna </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 158 </td>
+   <td style="text-align:right;"> 80 </td>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:left;"> I-B </td>
+   <td style="text-align:right;"> 22,491 </td>
+   <td style="text-align:right;"> 0.1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 11600_23 </td>
+   <td style="text-align:left;"> Rocky Mountain Subalpine/Upper Montane Riparian Systems </td>
+   <td style="text-align:left;"> Riparian </td>
+   <td style="text-align:right;"> 274 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 79 </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 38,969 </td>
+   <td style="text-align:right;"> 0.1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 10060 </td>
+   <td style="text-align:left;"> Rocky Mountain Alpine/Montane Sparsely Vegetated Systems </td>
+   <td style="text-align:left;"> Sparse </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> 21,564 </td>
+   <td style="text-align:right;"> 0.1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 10590_24_28 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Pinyon-Juniper Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 435 </td>
+   <td style="text-align:right;"> 200 </td>
+   <td style="text-align:right;"> 1,930 </td>
+   <td style="text-align:left;"> III-B </td>
+   <td style="text-align:right;"> 39,028 </td>
+   <td style="text-align:right;"> 0.1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 10810_15_16_23_24_28 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Mixed Salt Desert Scrub </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 616 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-B </td>
+   <td style="text-align:right;"> 19,067 </td>
+   <td style="text-align:right;"> 0.1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 11450_22_24_28 </td>
+   <td style="text-align:left;"> Rocky Mountain Subalpine-Montane Mesic Meadow </td>
+   <td style="text-align:left;"> Grassland </td>
+   <td style="text-align:right;"> 40 </td>
+   <td style="text-align:right;"> 161 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> II-C </td>
+   <td style="text-align:right;"> 48,984 </td>
+   <td style="text-align:right;"> 0.1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:left;"> 10490_19_20_21_23_28_29 </td>
+   <td style="text-align:left;"> Rocky Mountain Foothill Limber Pine-Juniper Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 385 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-A </td>
+   <td style="text-align:right;"> 28,554 </td>
+   <td style="text-align:right;"> 0.1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:left;"> 10610_20_29 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Aspen-Mixed Conifer Forest and Woodland </td>
+   <td style="text-align:left;"> Hardwood-Conifer </td>
+   <td style="text-align:right;"> 118 </td>
+   <td style="text-align:right;"> 102 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 19,389 </td>
+   <td style="text-align:right;"> 0.1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:left;"> 10860_29 </td>
+   <td style="text-align:left;"> Rocky Mountain Lower Montane-Foothill Shrubland </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 106 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-B </td>
+   <td style="text-align:right;"> 27,718 </td>
+   <td style="text-align:right;"> 0.1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:left;"> 11170_29 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Ponderosa Pine Savanna </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 382 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 16 </td>
+   <td style="text-align:left;"> I-B </td>
+   <td style="text-align:right;"> 24,427 </td>
+   <td style="text-align:right;"> 0.1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:left;"> 11480_20_29_30 </td>
+   <td style="text-align:left;"> Western Great Plains Sand Prairie </td>
+   <td style="text-align:left;"> Grassland </td>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> II-C </td>
+   <td style="text-align:right;"> 22,155 </td>
+   <td style="text-align:right;"> 0.1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:left;"> 11590_29 </td>
+   <td style="text-align:left;"> Rocky Mountain Montane Riparian Systems </td>
+   <td style="text-align:left;"> Riparian </td>
+   <td style="text-align:right;"> 99 </td>
+   <td style="text-align:right;"> 117 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 42,221 </td>
+   <td style="text-align:right;"> 0.1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:left;"> 11600_20_29 </td>
+   <td style="text-align:left;"> Rocky Mountain Subalpine/Upper Montane Riparian Systems </td>
+   <td style="text-align:left;"> Riparian </td>
+   <td style="text-align:right;"> 304 </td>
+   <td style="text-align:right;"> 301 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> III-B </td>
+   <td style="text-align:right;"> 19,196 </td>
+   <td style="text-align:right;"> 0.1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:left;"> 11660_29 </td>
+   <td style="text-align:left;"> Middle Rocky Mountain Montane Douglas-fir Forest and Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 210 </td>
+   <td style="text-align:right;"> 109 </td>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:left;"> I-C </td>
+   <td style="text-align:right;"> 20,854 </td>
+   <td style="text-align:right;"> 0.1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 10160_16_23_24_25 </td>
+   <td style="text-align:left;"> Colorado Plateau Pinyon-Juniper Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 435 </td>
+   <td style="text-align:right;"> 195 </td>
+   <td style="text-align:right;"> 2,265 </td>
+   <td style="text-align:left;"> III-B </td>
+   <td style="text-align:right;"> 22,034 </td>
+   <td style="text-align:right;"> 0.1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 10230_14_15_24_25 </td>
+   <td style="text-align:left;"> Madrean Encinal </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 125 </td>
+   <td style="text-align:right;"> 191 </td>
+   <td style="text-align:right;"> 33 </td>
+   <td style="text-align:left;"> I-C </td>
+   <td style="text-align:right;"> 37,852 </td>
+   <td style="text-align:right;"> 0.1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 11270_16_23_24_25 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Semi-Desert Shrub-Steppe </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 105 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-B </td>
+   <td style="text-align:right;"> 18,178 </td>
+   <td style="text-align:right;"> 0.1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 11590_25 </td>
+   <td style="text-align:left;"> Rocky Mountain Montane Riparian Systems </td>
+   <td style="text-align:left;"> Riparian </td>
+   <td style="text-align:right;"> 272 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 79 </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 29,886 </td>
+   <td style="text-align:right;"> 0.1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 33 </td>
+   <td style="text-align:left;"> 10860_27_31_33 </td>
+   <td style="text-align:left;"> Rocky Mountain Lower Montane-Foothill Shrubland </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 46 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-A </td>
+   <td style="text-align:right;"> 29,051 </td>
+   <td style="text-align:right;"> 0.1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 33 </td>
+   <td style="text-align:left;"> 11260_20_29_33 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Montane Sagebrush Steppe </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 50 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-A </td>
+   <td style="text-align:right;"> 43,179 </td>
+   <td style="text-align:right;"> 0.1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 33 </td>
+   <td style="text-align:left;"> 11470_27_33 </td>
+   <td style="text-align:left;"> Western Great Plains Foothill and Piedmont Grassland </td>
+   <td style="text-align:left;"> Grassland </td>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> II-C </td>
+   <td style="text-align:right;"> 34,208 </td>
+   <td style="text-align:right;"> 0.1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:left;"> 10542_27 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Ponderosa Pine Woodland-North </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 505 </td>
+   <td style="text-align:right;"> 160 </td>
+   <td style="text-align:right;"> 31 </td>
+   <td style="text-align:left;"> I-C </td>
+   <td style="text-align:right;"> 22,814 </td>
+   <td style="text-align:right;"> 0.1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:left;"> 11190_27 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Juniper Woodland and Savanna </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 495 </td>
+   <td style="text-align:right;"> 228 </td>
+   <td style="text-align:right;"> 33 </td>
+   <td style="text-align:left;"> I-C </td>
+   <td style="text-align:right;"> 29,372 </td>
+   <td style="text-align:right;"> 0.1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:left;"> 11490_27_38 </td>
+   <td style="text-align:left;"> Western Great Plains Shortgrass Prairie </td>
+   <td style="text-align:left;"> Grassland </td>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> II-C </td>
+   <td style="text-align:right;"> 52,609 </td>
+   <td style="text-align:right;"> 0.1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:left;"> 11590_27_33 </td>
+   <td style="text-align:left;"> Rocky Mountain Montane Riparian Systems </td>
+   <td style="text-align:left;"> Riparian </td>
+   <td style="text-align:right;"> 273 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 80 </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 46,781 </td>
+   <td style="text-align:right;"> 0.1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 10804_6_12_15_16_17_18_23_24_25 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Big Sagebrush Shrubland-Upland </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 120 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-B </td>
+   <td style="text-align:right;"> 39,019 </td>
+   <td style="text-align:right;"> 0.1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 10010 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Sparsely Vegetated Systems </td>
+   <td style="text-align:left;"> Sparse </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 11490_28 </td>
+   <td style="text-align:left;"> Western Great Plains Shortgrass Prairie </td>
+   <td style="text-align:left;"> Grassland </td>
+   <td style="text-align:right;"> 13 </td>
+   <td style="text-align:right;"> 61 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> II-B </td>
+   <td style="text-align:right;"> 1,040 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 10930_13_15_16_23_24_28 </td>
+   <td style="text-align:left;"> Southern Colorado Plateau Sand Shrubland </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 220 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-A </td>
+   <td style="text-align:right;"> 2,644 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 11250_6_12_13_15_16_17_18_23_24_25_28 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Big Sagebrush Steppe </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 117 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-B </td>
+   <td style="text-align:right;"> 669 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:left;"> 10010 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Sparsely Vegetated Systems </td>
+   <td style="text-align:left;"> Sparse </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:left;"> 10110_22 </td>
+   <td style="text-align:left;"> Rocky Mountain Aspen Forest and Woodland </td>
+   <td style="text-align:left;"> Hardwood </td>
+   <td style="text-align:right;"> 163 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-B </td>
+   <td style="text-align:right;"> 7,562 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:left;"> 10160_22 </td>
+   <td style="text-align:left;"> Colorado Plateau Pinyon-Juniper Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 458 </td>
+   <td style="text-align:right;"> 215 </td>
+   <td style="text-align:right;"> 3,310 </td>
+   <td style="text-align:left;"> III-B </td>
+   <td style="text-align:right;"> 41 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:left;"> 10490_16_22 </td>
+   <td style="text-align:left;"> Rocky Mountain Foothill Limber Pine-Juniper Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 216 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-A </td>
+   <td style="text-align:right;"> 12,539 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:left;"> 10500_22 </td>
+   <td style="text-align:left;"> Rocky Mountain Lodgepole Pine Forest </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 169 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-B </td>
+   <td style="text-align:right;"> 226 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:left;"> 10510_15_16_17_22_23_24_25 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Dry-Mesic Montane Mixed Conifer Forest and Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 90 </td>
+   <td style="text-align:right;"> 77 </td>
+   <td style="text-align:right;"> 14 </td>
+   <td style="text-align:left;"> I-B </td>
+   <td style="text-align:right;"> 1,286 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:left;"> 10540_22 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Ponderosa Pine Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 165 </td>
+   <td style="text-align:right;"> 49 </td>
+   <td style="text-align:right;"> 19 </td>
+   <td style="text-align:left;"> I-B </td>
+   <td style="text-align:right;"> 5,991 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:left;"> 10550_21_22 </td>
+   <td style="text-align:left;"> Rocky Mountain Subalpine Dry-Mesic Spruce-Fir Forest and Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 333 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-A </td>
+   <td style="text-align:right;"> 310 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:left;"> 10610_22_27_28 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Aspen-Mixed Conifer Forest and Woodland </td>
+   <td style="text-align:left;"> Hardwood-Conifer </td>
+   <td style="text-align:right;"> 78 </td>
+   <td style="text-align:right;"> 73 </td>
+   <td style="text-align:right;"> 126 </td>
+   <td style="text-align:left;"> I-C </td>
+   <td style="text-align:right;"> 566 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:left;"> 10620_22_28 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Curl-leaf Mountain Mahogany Woodland and Shrubland </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 229 </td>
+   <td style="text-align:right;"> 78 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 311 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:left;"> 10660_22 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Mat Saltbush Shrubland </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> 1,921 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:left;"> 10720_22_29 </td>
+   <td style="text-align:left;"> Wyoming Basins Dwarf Sagebrush Shrubland and Steppe </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 331 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-A </td>
+   <td style="text-align:right;"> 13 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:left;"> 10801_21_22_28 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Big Sagebrush Shrubland-Basin Big Sagebrush </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 72 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-A </td>
+   <td style="text-align:right;"> 7,231 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:left;"> 10810_22 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Mixed Salt Desert Scrub </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 450 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-A </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:left;"> 10861_22 </td>
+   <td style="text-align:left;"> Rocky Mountain Lower Montane-Foothill Shrubland-No True Mountain Mahogany </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 89 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-A </td>
+   <td style="text-align:right;"> 3,407 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:left;"> 10862_22 </td>
+   <td style="text-align:left;"> Rocky Mountain Lower Montane-Foothill Shrubland-True Mountain Mahogany </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 106 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-B </td>
+   <td style="text-align:right;"> 321 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:left;"> 11150_21_22 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Juniper Savanna </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 355 </td>
+   <td style="text-align:right;"> 212 </td>
+   <td style="text-align:right;"> 123 </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:left;"> 11270_22 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Semi-Desert Shrub-Steppe </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 448 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-A </td>
+   <td style="text-align:right;"> 240 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:left;"> 11350_22 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Semi-Desert Grassland </td>
+   <td style="text-align:left;"> Grassland </td>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> II-C </td>
+   <td style="text-align:right;"> 577 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:left;"> 11390_22 </td>
+   <td style="text-align:left;"> Northern Rocky Mountain Lower Montane-Foothill-Valley Grassland </td>
+   <td style="text-align:left;"> Grassland </td>
+   <td style="text-align:right;"> 66 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-A </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:left;"> 11530_20_22_29_30 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Greasewood Flat </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 207 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-A </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:left;"> 11620_22 </td>
+   <td style="text-align:left;"> Western Great Plains Floodplain Systems </td>
+   <td style="text-align:left;"> Riparian </td>
+   <td style="text-align:right;"> 571 </td>
+   <td style="text-align:right;"> 125 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> III-B </td>
+   <td style="text-align:right;"> 96 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:left;"> 11660_22 </td>
+   <td style="text-align:left;"> Middle Rocky Mountain Montane Douglas-fir Forest and Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 207 </td>
+   <td style="text-align:right;"> 53 </td>
+   <td style="text-align:right;"> 138 </td>
+   <td style="text-align:left;"> I-C </td>
+   <td style="text-align:right;"> 295 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 10010 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Sparsely Vegetated Systems </td>
+   <td style="text-align:left;"> Sparse </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> 900 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 10060 </td>
+   <td style="text-align:left;"> Rocky Mountain Alpine/Montane Sparsely Vegetated Systems </td>
+   <td style="text-align:left;"> Sparse </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> 7,097 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 10490_19_20_21_23_28_29 </td>
+   <td style="text-align:left;"> Rocky Mountain Foothill Limber Pine-Juniper Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 385 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-A </td>
+   <td style="text-align:right;"> 582 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 10500_16_23_28 </td>
+   <td style="text-align:left;"> Rocky Mountain Lodgepole Pine Forest </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 152 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 640 </td>
+   <td style="text-align:left;"> IV-B </td>
+   <td style="text-align:right;"> 2,470 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 10520_16_23_24 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Mesic Montane Mixed Conifer Forest and Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 180 </td>
+   <td style="text-align:right;"> 89 </td>
+   <td style="text-align:right;"> 74 </td>
+   <td style="text-align:left;"> I-C </td>
+   <td style="text-align:right;"> 16,733 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 10560_16_23 </td>
+   <td style="text-align:left;"> Rocky Mountain Subalpine Mesic-Wet Spruce-Fir Forest and Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 217 </td>
+   <td style="text-align:right;"> 6,998 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-A </td>
+   <td style="text-align:right;"> 970 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 10570_23 </td>
+   <td style="text-align:left;"> Rocky Mountain Subalpine-Montane Limber-Bristlecone Pine Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 502 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 200 </td>
+   <td style="text-align:left;"> III-B </td>
+   <td style="text-align:right;"> 538 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 10620_16_23 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Curl-leaf Mountain Mahogany Woodland and Shrubland </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 246 </td>
+   <td style="text-align:right;"> 137 </td>
+   <td style="text-align:right;"> 228 </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 7,651 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 10640_15_16_17_23_24_27_28 </td>
+   <td style="text-align:left;"> Colorado Plateau Mixed Low Sagebrush Shrubland </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 239 </td>
+   <td style="text-align:right;"> 119 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 874 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 10660_16_23_24 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Mat Saltbush Shrubland </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> 14 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 10780_16_23_24_25 </td>
+   <td style="text-align:left;"> Colorado Plateau Blackbrush-Mormon-tea Shrubland </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 146 </td>
+   <td style="text-align:right;"> 162 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 247 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 10810_15_16_23_24_28 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Mixed Salt Desert Scrub </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 616 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-B </td>
+   <td style="text-align:right;"> 1,836 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 10930_13_15_16_23_24_28 </td>
+   <td style="text-align:left;"> Southern Colorado Plateau Sand Shrubland </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 220 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-A </td>
+   <td style="text-align:right;"> 415 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 11020_13_15_16_23_24 </td>
+   <td style="text-align:left;"> Colorado Plateau Pinyon-Juniper Shrubland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 333 </td>
+   <td style="text-align:right;"> 222 </td>
+   <td style="text-align:right;"> 127 </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 567 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 11040_23_24 </td>
+   <td style="text-align:left;"> Mogollon Chaparral </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 47 </td>
+   <td style="text-align:right;"> 370 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-A </td>
+   <td style="text-align:right;"> 354 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 11150_15_16_23_24 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Juniper Savanna </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 333 </td>
+   <td style="text-align:right;"> 218 </td>
+   <td style="text-align:right;"> 126 </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 179 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 11250_6_12_13_15_16_17_18_23_24_25_28 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Big Sagebrush Steppe </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 117 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-B </td>
+   <td style="text-align:right;"> 91 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 11262_16_23 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Montane Sagebrush Steppe-Low Sagebrush </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 219 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-A </td>
+   <td style="text-align:right;"> 4,006 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 11270_16_23_24_25 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Semi-Desert Shrub-Steppe </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 105 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-B </td>
+   <td style="text-align:right;"> 129 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 11350_16_23_24 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Semi-Desert Grassland </td>
+   <td style="text-align:left;"> Grassland </td>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> II-C </td>
+   <td style="text-align:right;"> 3,349 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 11460_15_16_23_24_25_28 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Montane-Subalpine Grassland </td>
+   <td style="text-align:left;"> Grassland </td>
+   <td style="text-align:right;"> 20 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 21 </td>
+   <td style="text-align:left;"> I-B </td>
+   <td style="text-align:right;"> 4,407 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 11530_16_23_24_25_27 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Greasewood Flat </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 208 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-A </td>
+   <td style="text-align:right;"> 2,326 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:left;"> 10160_16_23_24_25 </td>
+   <td style="text-align:left;"> Colorado Plateau Pinyon-Juniper Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 435 </td>
+   <td style="text-align:right;"> 195 </td>
+   <td style="text-align:right;"> 2,265 </td>
+   <td style="text-align:left;"> III-B </td>
+   <td style="text-align:right;"> 1,220 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:left;"> 10510_15_16_17_22_23_24_25 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Dry-Mesic Montane Mixed Conifer Forest and Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 90 </td>
+   <td style="text-align:right;"> 77 </td>
+   <td style="text-align:right;"> 14 </td>
+   <td style="text-align:left;"> I-B </td>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:left;"> 10540_16_23_24 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Ponderosa Pine Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 280 </td>
+   <td style="text-align:right;"> 226 </td>
+   <td style="text-align:right;"> 20 </td>
+   <td style="text-align:left;"> I-C </td>
+   <td style="text-align:right;"> 606 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:left;"> 10590_24_28 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Pinyon-Juniper Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 435 </td>
+   <td style="text-align:right;"> 200 </td>
+   <td style="text-align:right;"> 1,930 </td>
+   <td style="text-align:left;"> III-B </td>
+   <td style="text-align:right;"> 476 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:left;"> 10611_16_23_24 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Aspen-Mixed Conifer Forest and Woodland-Low Elevation </td>
+   <td style="text-align:left;"> Hardwood-Conifer </td>
+   <td style="text-align:right;"> 43 </td>
+   <td style="text-align:right;"> 13 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> I-B </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:left;"> 10640_15_16_17_23_24_27_28 </td>
+   <td style="text-align:left;"> Colorado Plateau Mixed Low Sagebrush Shrubland </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 239 </td>
+   <td style="text-align:right;"> 119 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 111 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:left;"> 10810_15_16_23_24_28 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Mixed Salt Desert Scrub </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 616 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-B </td>
+   <td style="text-align:right;"> 46 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:left;"> 10930_13_15_16_23_24_28 </td>
+   <td style="text-align:left;"> Southern Colorado Plateau Sand Shrubland </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 220 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-A </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:left;"> 11020_13_15_16_23_24 </td>
+   <td style="text-align:left;"> Colorado Plateau Pinyon-Juniper Shrubland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 333 </td>
+   <td style="text-align:right;"> 222 </td>
+   <td style="text-align:right;"> 127 </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:left;"> 11040_23_24 </td>
+   <td style="text-align:left;"> Mogollon Chaparral </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 47 </td>
+   <td style="text-align:right;"> 370 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-A </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:left;"> 11070_23_24 </td>
+   <td style="text-align:left;"> Rocky Mountain Gambel Oak-Mixed Montane Shrubland </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 51 </td>
+   <td style="text-align:right;"> 150 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:left;"> 11170_16_23_24 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Ponderosa Pine Savanna </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 158 </td>
+   <td style="text-align:right;"> 80 </td>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:left;"> I-B </td>
+   <td style="text-align:right;"> 1,452 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:left;"> 11190_24_25 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Juniper Woodland and Savanna </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 503 </td>
+   <td style="text-align:right;"> 217 </td>
+   <td style="text-align:right;"> 32 </td>
+   <td style="text-align:left;"> I-C </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:left;"> 11210_24 </td>
+   <td style="text-align:left;"> Apacherian-Chihuahuan Semi-Desert Grassland and Steppe </td>
+   <td style="text-align:left;"> Grassland </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 42 </td>
+   <td style="text-align:left;"> II-B </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:left;"> 11270_16_23_24_25 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Semi-Desert Shrub-Steppe </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 105 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-B </td>
+   <td style="text-align:right;"> 99 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:left;"> 11350_16_23_24 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Semi-Desert Grassland </td>
+   <td style="text-align:left;"> Grassland </td>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> II-C </td>
+   <td style="text-align:right;"> 388 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:left;"> 11530_16_23_24_25_27 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Greasewood Flat </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 208 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-A </td>
+   <td style="text-align:right;"> 34 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:left;"> 11590_16_23_24_26 </td>
+   <td style="text-align:left;"> Rocky Mountain Montane Riparian Systems </td>
+   <td style="text-align:left;"> Riparian </td>
+   <td style="text-align:right;"> 270 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 79 </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 359 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 10490_19_20_21_23_28_29 </td>
+   <td style="text-align:left;"> Rocky Mountain Foothill Limber Pine-Juniper Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 385 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-A </td>
+   <td style="text-align:right;"> 7,799 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 10620_22_28 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Curl-leaf Mountain Mahogany Woodland and Shrubland </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 229 </td>
+   <td style="text-align:right;"> 78 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 168 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 10640_15_16_17_23_24_27_28 </td>
+   <td style="text-align:left;"> Colorado Plateau Mixed Low Sagebrush Shrubland </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 239 </td>
+   <td style="text-align:right;"> 119 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 994 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 10700_10_19_28 </td>
+   <td style="text-align:left;"> Rocky Mountain Alpine Dwarf-Shrubland </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 228 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-A </td>
+   <td style="text-align:right;"> 10,286 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 11020_28 </td>
+   <td style="text-align:left;"> Colorado Plateau Pinyon-Juniper Shrubland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 431 </td>
+   <td style="text-align:right;"> 192 </td>
+   <td style="text-align:right;"> 2,125 </td>
+   <td style="text-align:left;"> III-B </td>
+   <td style="text-align:right;"> 459 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 11150_28 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Juniper Savanna </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 337 </td>
+   <td style="text-align:right;"> 434 </td>
+   <td style="text-align:right;"> 276 </td>
+   <td style="text-align:left;"> III-B </td>
+   <td style="text-align:right;"> 9,208 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 11190_28 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Juniper Woodland and Savanna </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 501 </td>
+   <td style="text-align:right;"> 212 </td>
+   <td style="text-align:right;"> 32 </td>
+   <td style="text-align:left;"> I-C </td>
+   <td style="text-align:right;"> 8,815 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:left;"> 11250_6_12_13_15_16_17_18_23_24_25_28 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Big Sagebrush Steppe </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 117 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-B </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:left;"> 10060 </td>
+   <td style="text-align:left;"> Rocky Mountain Alpine/Montane Sparsely Vegetated Systems </td>
+   <td style="text-align:left;"> Sparse </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> 34 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:left;"> 10070 </td>
+   <td style="text-align:left;"> Western Great Plains Sparsely Vegetated Systems </td>
+   <td style="text-align:left;"> Sparse </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> 3,523 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:left;"> 10110_20_29 </td>
+   <td style="text-align:left;"> Rocky Mountain Aspen Forest and Woodland </td>
+   <td style="text-align:left;"> Hardwood </td>
+   <td style="text-align:right;"> 121 </td>
+   <td style="text-align:right;"> 588 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-A </td>
+   <td style="text-align:right;"> 14,216 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:left;"> 10480_29 </td>
+   <td style="text-align:left;"> Northwestern Great Plains Highland White Spruce Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 270 </td>
+   <td style="text-align:right;"> 119 </td>
+   <td style="text-align:right;"> 45 </td>
+   <td style="text-align:left;"> I-C </td>
+   <td style="text-align:right;"> 312 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:left;"> 10570_29 </td>
+   <td style="text-align:left;"> Rocky Mountain Subalpine-Montane Limber-Bristlecone Pine Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 499 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 999 </td>
+   <td style="text-align:left;"> V-A </td>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:left;"> 10620_10_19_21_29_31 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Curl-leaf Mountain Mahogany Woodland and Shrubland </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 286 </td>
+   <td style="text-align:right;"> 151 </td>
+   <td style="text-align:right;"> 232 </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 6,572 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:left;"> 10660_29 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Mat Saltbush Shrubland </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 440 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-A </td>
+   <td style="text-align:right;"> 2,226 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:left;"> 10720_22_29 </td>
+   <td style="text-align:left;"> Wyoming Basins Dwarf Sagebrush Shrubland and Steppe </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 331 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-A </td>
+   <td style="text-align:right;"> 5,235 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:left;"> 10850_29_30 </td>
+   <td style="text-align:left;"> Northwestern Great Plains Shrubland </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 15 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> II-B </td>
+   <td style="text-align:right;"> 7,874 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:left;"> 11390_29 </td>
+   <td style="text-align:left;"> Northern Rocky Mountain Lower Montane-Foothill-Valley Grassland </td>
+   <td style="text-align:left;"> Grassland </td>
+   <td style="text-align:right;"> 35 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> II-C </td>
+   <td style="text-align:right;"> 8,312 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:left;"> 11400_29 </td>
+   <td style="text-align:left;"> Northern Rocky Mountain Subalpine-Upper Montane Grassland </td>
+   <td style="text-align:left;"> Grassland </td>
+   <td style="text-align:right;"> 79 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-A </td>
+   <td style="text-align:right;"> 5,118 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:left;"> 11490_29 </td>
+   <td style="text-align:left;"> Western Great Plains Shortgrass Prairie </td>
+   <td style="text-align:left;"> Grassland </td>
+   <td style="text-align:right;"> 21 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> II-C </td>
+   <td style="text-align:right;"> 136 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:left;"> 11530_20_22_29_30 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Greasewood Flat </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 207 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-A </td>
+   <td style="text-align:right;"> 92 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:left;"> 11620_29_30 </td>
+   <td style="text-align:left;"> Western Great Plains Floodplain Systems </td>
+   <td style="text-align:left;"> Riparian </td>
+   <td style="text-align:right;"> 111 </td>
+   <td style="text-align:right;"> 148 </td>
+   <td style="text-align:right;"> 259 </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 13,778 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:left;"> 11791_29_30 </td>
+   <td style="text-align:left;"> Northwestern Great Plains-Black Hills Ponderosa Pine Woodland and Savanna-Low Elevation Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 307 </td>
+   <td style="text-align:right;"> 263 </td>
+   <td style="text-align:right;"> 20 </td>
+   <td style="text-align:left;"> I-C </td>
+   <td style="text-align:right;"> 354 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:left;"> 11792_29_30 </td>
+   <td style="text-align:left;"> Northwestern Great Plains-Black Hills Ponderosa Pine Woodland and Savanna-Savanna </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 387 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 15 </td>
+   <td style="text-align:left;"> I-B </td>
+   <td style="text-align:right;"> 15,819 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:left;"> 13850_29_30 </td>
+   <td style="text-align:left;"> Western Great Plains Wooded Draw and Ravine </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 72 </td>
+   <td style="text-align:right;"> 38 </td>
+   <td style="text-align:right;"> 80 </td>
+   <td style="text-align:left;"> I-C </td>
+   <td style="text-align:right;"> 209 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 10040 </td>
+   <td style="text-align:left;"> North American Warm Desert Sparsely Vegetated Systems </td>
+   <td style="text-align:left;"> Sparse </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> 59 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 10240_25_27 </td>
+   <td style="text-align:left;"> Madrean Lower Montane Pine-Oak Forest and Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 60 </td>
+   <td style="text-align:right;"> 30 </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:left;"> I-B </td>
+   <td style="text-align:right;"> 32 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 10250_14_15_24_25_26 </td>
+   <td style="text-align:left;"> Madrean Pinyon-Juniper Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 136 </td>
+   <td style="text-align:right;"> 209 </td>
+   <td style="text-align:right;"> 104 </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 10510_15_16_17_22_23_24_25 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Dry-Mesic Montane Mixed Conifer Forest and Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 90 </td>
+   <td style="text-align:right;"> 77 </td>
+   <td style="text-align:right;"> 14 </td>
+   <td style="text-align:left;"> I-B </td>
+   <td style="text-align:right;"> 2,636 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 10520_25 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Mesic Montane Mixed Conifer Forest and Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 182 </td>
+   <td style="text-align:right;"> 90 </td>
+   <td style="text-align:right;"> 73 </td>
+   <td style="text-align:left;"> I-C </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 10610_15_25 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Aspen-Mixed Conifer Forest and Woodland </td>
+   <td style="text-align:left;"> Hardwood-Conifer </td>
+   <td style="text-align:right;"> 43 </td>
+   <td style="text-align:right;"> 20 </td>
+   <td style="text-align:right;"> 110 </td>
+   <td style="text-align:left;"> I-B </td>
+   <td style="text-align:right;"> 26 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 10740_25_26 </td>
+   <td style="text-align:left;"> Chihuahuan Creosotebush Desert Scrub </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> 497 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 10750_25 </td>
+   <td style="text-align:left;"> Chihuahuan Mixed Salt Desert Scrub </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 706 </td>
+   <td style="text-align:right;"> 805 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-A </td>
+   <td style="text-align:right;"> 449 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 10770_25_26 </td>
+   <td style="text-align:left;"> Chihuahuan Succulent Desert Scrub </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 160 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-B </td>
+   <td style="text-align:right;"> 1,209 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 11002_25 </td>
+   <td style="text-align:left;"> Chihuahuan Mixed Desert and Thorn Scrub-Shrubland </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 841 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-B </td>
+   <td style="text-align:right;"> 1,128 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 11003_25 </td>
+   <td style="text-align:left;"> Chihuahuan Mixed Desert and Thorn Scrub-Steppe </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> 5,079 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 11040_13_14_25 </td>
+   <td style="text-align:left;"> Mogollon Chaparral </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 77 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-A </td>
+   <td style="text-align:right;"> 7,063 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 11070_25_28 </td>
+   <td style="text-align:left;"> Rocky Mountain Gambel Oak-Mixed Montane Shrubland </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 50 </td>
+   <td style="text-align:right;"> 171 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 64 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 11080_4_5_13_14_15_24_25 </td>
+   <td style="text-align:left;"> Sonora-Mojave Semi-Desert Chaparral </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 81 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-A </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 11160_15_25 </td>
+   <td style="text-align:left;"> Madrean Juniper Savanna </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 136 </td>
+   <td style="text-align:right;"> 208 </td>
+   <td style="text-align:right;"> 106 </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 11210_25 </td>
+   <td style="text-align:left;"> Apacherian-Chihuahuan Semi-Desert Grassland and Steppe </td>
+   <td style="text-align:left;"> Grassland </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 82 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 7,067 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 11220_25 </td>
+   <td style="text-align:left;"> Chihuahuan Gypsophilous Grassland and Steppe </td>
+   <td style="text-align:left;"> Grassland </td>
+   <td style="text-align:right;"> 65 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-A </td>
+   <td style="text-align:right;"> 98 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 11330_25 </td>
+   <td style="text-align:left;"> Chihuahuan Sandy Plains Semi-Desert Grassland </td>
+   <td style="text-align:left;"> Grassland </td>
+   <td style="text-align:right;"> 896 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-B </td>
+   <td style="text-align:right;"> 5,661 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 11350_25 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Semi-Desert Grassland </td>
+   <td style="text-align:left;"> Grassland </td>
+   <td style="text-align:right;"> 26 </td>
+   <td style="text-align:right;"> 1,011 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> II-C </td>
+   <td style="text-align:right;"> 827 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 11460_15_16_23_24_25_28 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Montane-Subalpine Grassland </td>
+   <td style="text-align:left;"> Grassland </td>
+   <td style="text-align:right;"> 20 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 21 </td>
+   <td style="text-align:left;"> I-B </td>
+   <td style="text-align:right;"> 1,337 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 11490_25 </td>
+   <td style="text-align:left;"> Western Great Plains Shortgrass Prairie </td>
+   <td style="text-align:left;"> Grassland </td>
+   <td style="text-align:right;"> 19 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> II-C </td>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 11530_16_23_24_25_27 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Greasewood Flat </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 208 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-A </td>
+   <td style="text-align:right;"> 3,001 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 11550_25 </td>
+   <td style="text-align:left;"> North American Warm Desert Riparian Systems </td>
+   <td style="text-align:left;"> Riparian </td>
+   <td style="text-align:right;"> 225 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-A </td>
+   <td style="text-align:right;"> 1,873 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 15030_25_27 </td>
+   <td style="text-align:left;"> Chihuahuan Loamy Plains Desert Grassland </td>
+   <td style="text-align:left;"> Grassland </td>
+   <td style="text-align:right;"> 15 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> II-B </td>
+   <td style="text-align:right;"> 62 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 15040_25_27 </td>
+   <td style="text-align:left;"> Chihuahuan-Sonoran Desert Bottomland and Swale Grassland </td>
+   <td style="text-align:left;"> Grassland </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> II-B </td>
+   <td style="text-align:right;"> 134 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 33 </td>
+   <td style="text-align:left;"> 10540_33 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Ponderosa Pine Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 511 </td>
+   <td style="text-align:right;"> 159 </td>
+   <td style="text-align:right;"> 30 </td>
+   <td style="text-align:left;"> I-C </td>
+   <td style="text-align:right;"> 13,159 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 33 </td>
+   <td style="text-align:left;"> 10590_27_33 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Pinyon-Juniper Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 327 </td>
+   <td style="text-align:right;"> 406 </td>
+   <td style="text-align:right;"> 566 </td>
+   <td style="text-align:left;"> III-B </td>
+   <td style="text-align:right;"> 51 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 33 </td>
+   <td style="text-align:left;"> 11250_20_29_30_31_33 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Big Sagebrush Steppe </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 92 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-A </td>
+   <td style="text-align:right;"> 301 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 33 </td>
+   <td style="text-align:left;"> 10810_27_33 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Mixed Salt Desert Scrub </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 237 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-A </td>
+   <td style="text-align:right;"> 83 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 33 </td>
+   <td style="text-align:left;"> 10940_27_33 </td>
+   <td style="text-align:left;"> Western Great Plains Sandhill Steppe </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> II-C </td>
+   <td style="text-align:right;"> 79 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 33 </td>
+   <td style="text-align:left;"> 11070_27_33 </td>
+   <td style="text-align:left;"> Rocky Mountain Gambel Oak-Mixed Montane Shrubland </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 50 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-A </td>
+   <td style="text-align:right;"> 9,569 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 33 </td>
+   <td style="text-align:left;"> 11170_33 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Ponderosa Pine Savanna </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 461 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 20 </td>
+   <td style="text-align:left;"> I-C </td>
+   <td style="text-align:right;"> 695 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 33 </td>
+   <td style="text-align:left;"> 11320_33 </td>
+   <td style="text-align:left;"> Central Mixedgrass Prairie </td>
+   <td style="text-align:left;"> Grassland </td>
+   <td style="text-align:right;"> 15 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> II-B </td>
+   <td style="text-align:right;"> 79 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 33 </td>
+   <td style="text-align:left;"> 11490_31_33 </td>
+   <td style="text-align:left;"> Western Great Plains Shortgrass Prairie </td>
+   <td style="text-align:left;"> Grassland </td>
+   <td style="text-align:right;"> 21 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> II-C </td>
+   <td style="text-align:right;"> 14,013 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 33 </td>
+   <td style="text-align:left;"> 11590_27_33 </td>
+   <td style="text-align:left;"> Rocky Mountain Montane Riparian Systems </td>
+   <td style="text-align:left;"> Riparian </td>
+   <td style="text-align:right;"> 273 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 80 </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 1,478 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 33 </td>
+   <td style="text-align:left;"> 11620_27_33 </td>
+   <td style="text-align:left;"> Western Great Plains Floodplain Systems </td>
+   <td style="text-align:left;"> Riparian </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> I-C </td>
+   <td style="text-align:right;"> 3,061 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 33 </td>
+   <td style="text-align:left;"> 14950_27_33 </td>
+   <td style="text-align:left;"> Western Great Plains Depressional Wetland Systems </td>
+   <td style="text-align:left;"> Riparian </td>
+   <td style="text-align:right;"> 15 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> II-B </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:left;"> 10070 </td>
+   <td style="text-align:left;"> Western Great Plains Sparsely Vegetated Systems </td>
+   <td style="text-align:left;"> Sparse </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> 20 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:left;"> 10110_27 </td>
+   <td style="text-align:left;"> Rocky Mountain Aspen Forest and Woodland </td>
+   <td style="text-align:left;"> Hardwood </td>
+   <td style="text-align:right;"> 146 </td>
+   <td style="text-align:right;"> 1,719 </td>
+   <td style="text-align:right;"> 839 </td>
+   <td style="text-align:left;"> IV-B </td>
+   <td style="text-align:right;"> 607 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:left;"> 10120_16_27 </td>
+   <td style="text-align:left;"> Rocky Mountain Bigtooth Maple Ravine Woodland </td>
+   <td style="text-align:left;"> Hardwood </td>
+   <td style="text-align:right;"> 136 </td>
+   <td style="text-align:right;"> 82 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 12 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:left;"> 10510_27 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Dry-Mesic Montane Mixed Conifer Forest and Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 279 </td>
+   <td style="text-align:right;"> 57 </td>
+   <td style="text-align:right;"> 33 </td>
+   <td style="text-align:left;"> I-C </td>
+   <td style="text-align:right;"> 9,074 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:left;"> 10520_27 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Mesic Montane Mixed Conifer Forest and Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 253 </td>
+   <td style="text-align:right;"> 98 </td>
+   <td style="text-align:right;"> 77 </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 667 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:left;"> 10550_27 </td>
+   <td style="text-align:left;"> Rocky Mountain Subalpine Dry-Mesic Spruce-Fir Forest and Woodland </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 201 </td>
+   <td style="text-align:right;"> 443 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-B </td>
+   <td style="text-align:right;"> 18 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:left;"> 10610_22_27_28 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Aspen-Mixed Conifer Forest and Woodland </td>
+   <td style="text-align:left;"> Hardwood-Conifer </td>
+   <td style="text-align:right;"> 78 </td>
+   <td style="text-align:right;"> 73 </td>
+   <td style="text-align:right;"> 126 </td>
+   <td style="text-align:left;"> I-C </td>
+   <td style="text-align:right;"> 828 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:left;"> 10640_15_16_17_23_24_27_28 </td>
+   <td style="text-align:left;"> Colorado Plateau Mixed Low Sagebrush Shrubland </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 239 </td>
+   <td style="text-align:right;"> 119 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> III-A </td>
+   <td style="text-align:right;"> 26 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:left;"> 10860_27_31_33 </td>
+   <td style="text-align:left;"> Rocky Mountain Lower Montane-Foothill Shrubland </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 46 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-A </td>
+   <td style="text-align:right;"> 8,196 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:left;"> 10940_27_33 </td>
+   <td style="text-align:left;"> Western Great Plains Sandhill Steppe </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> II-C </td>
+   <td style="text-align:right;"> 2,757 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:left;"> 11171_27 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Ponderosa Pine Savanna-South </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 521 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 12 </td>
+   <td style="text-align:left;"> I-B </td>
+   <td style="text-align:right;"> 57 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:left;"> 11172_27 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Ponderosa Pine Savanna-North </td>
+   <td style="text-align:left;"> Conifer </td>
+   <td style="text-align:right;"> 460 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 20 </td>
+   <td style="text-align:left;"> I-C </td>
+   <td style="text-align:right;"> 1,587 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:left;"> 11210_27 </td>
+   <td style="text-align:left;"> Apacherian-Chihuahuan Semi-Desert Grassland and Steppe </td>
+   <td style="text-align:left;"> Grassland </td>
+   <td style="text-align:right;"> 13 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> II-B </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:left;"> 11460_27 </td>
+   <td style="text-align:left;"> Southern Rocky Mountain Montane-Subalpine Grassland </td>
+   <td style="text-align:left;"> Grassland </td>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> II-C </td>
+   <td style="text-align:right;"> 935 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:left;"> 11530_16_23_24_25_27 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Greasewood Flat </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 208 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-A </td>
+   <td style="text-align:right;"> 4,840 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:left;"> 11620_27_33 </td>
+   <td style="text-align:left;"> Western Great Plains Floodplain Systems </td>
+   <td style="text-align:left;"> Riparian </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> I-C </td>
+   <td style="text-align:right;"> 6,035 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:left;"> 10803_6_12_15_16_17_18_23_24_25 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Big Sagebrush Shrubland-Semi-Desert </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 151 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-B </td>
+   <td style="text-align:right;"> 514 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:left;"> 10804_6_12_15_16_17_18_23_24_25 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Big Sagebrush Shrubland-Upland </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 120 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-B </td>
+   <td style="text-align:right;"> 1,715 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:left;"> 10803_6_12_15_16_17_18_23_24_25 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Big Sagebrush Shrubland-Semi-Desert </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 151 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> IV-B </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:left;"> 10810_27_33 </td>
+   <td style="text-align:left;"> Inter-Mountain Basins Mixed Salt Desert Scrub </td>
+   <td style="text-align:left;"> Shrubland </td>
+   <td style="text-align:right;"> 237 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> V-A </td>
+   <td style="text-align:right;"> 8,862 </td>
+   <td style="text-align:right;"> 0.0 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'alternate';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
