@@ -168,10 +168,10 @@
     "text": "Existing Vegetation Cover\nThe data from chart below is displayed spatially on the map (directly) above the chart. The colors on the graph correspond to the EVC classifications on the landscape and the map is a visual, spatial representation of the same information.\nFor example, the majority of this subregion is classified as “shrub,” which aligns with the information conveyed on the chart where shrub cover comprises approximately 80% of the vegetation here."
   },
   {
-    "objectID": "present.html#existing-vegetation-height-fix-chart",
-    "href": "present.html#existing-vegetation-height-fix-chart",
+    "objectID": "present.html#existing-vegetation-height",
+    "href": "present.html#existing-vegetation-height",
     "title": "Present",
-    "section": "Existing Vegetation Height-FIX CHART!!!!!!",
-    "text": "Existing Vegetation Height-FIX CHART!!!!!!\nThe data from chart below is displayed spatially on the map (directly) above the chart. The colors on the graph correspond to the EVH height classifications on the landscape showing how majority of the the vegetation height is concentrated in the .25-.9 m height category."
+    "section": "Existing Vegetation Height",
+    "text": "Existing Vegetation Height\nThe data from chart below is displayed spatially on the map (directly) above the chart. The colors on the graph correspond to the EVH height classifications on the landscape showing how majority of the the vegetation height is concentrated in the .25-.9 m height category."
   }
 ]

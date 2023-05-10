@@ -163,7 +163,7 @@ evcChart
 
 <br>
 
-## Existing Vegetation Height-FIX CHART!!!!!!
+## Existing Vegetation Height
 The data from chart below is displayed spatially on the map (directly) above the chart. The colors on the graph correspond to the EVH height classifications on the landscape showing how majority of the the vegetation height is concentrated in the .25-.9 m height category.
 
 ![](images/evh.jpg){width=100%}
