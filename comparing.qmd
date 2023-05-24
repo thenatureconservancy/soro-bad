@@ -1,5 +1,5 @@
 ---
-title: "Comparing Past vs. Present Conditions"
+title: "Comparisons"
 ---
 
 ```{r include=FALSE, echo=FALSE, message=FALSE, warning=FALSE}
@@ -12,11 +12,19 @@ library(tidyverse)
 
 ```
 
-Using LANDFIRE's BpS products, we explore two different ways to visualize past vs.current vegetation patterns. First we present **changes in broad ecosystem types** using an interactive comparison diagram. Second we compare **amounts of succession classes** (past and present) for the most prevalent ecosystems. 
+### Comparing Past vs. Present Conditions
+
+Using LANDFIRE’s BpS products, we explore two different ways to visualize past vs. current vegetation patterns. 
+
+* First we present **changes in broad ecosystem types** using an interactive comparison diagram. 
+
+* Second we compare **amounts of succession classes** (past and present) for the most prevalent ecosystems. 
 
 ## Comparing Broad Vegetation Trends
 ### Summary
 
+* Broadly speaking, this subregion has not experienced significant ecosystem conversion to agricultural or urban land uses.  
+* There have been some broad ecosystem shifts, e.g., past conifer mapped as shrubland currently.  
 
 ```{r chord, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 # read in data
@@ -84,10 +92,9 @@ htmlwidgets::saveWidget(chord,
 <br>
 
 ## Succession classes for most dominant BpSs
-### Quick Summary
-- For the BpS presented here there is an under-representation of early successional classes (across all ecosystems)
-- Inter-Mountain Basins Mat Saltbrush Shrubland / Montane Sagebrush Steppe both have substantial amounts of uncharacteristic native vegetation (may be associated with Pinyon Juniper encroachment in the region)
-- Rocky Mountain Montane Riparian Systems have the highest level of agriculture 
+
+* The Rocky Mountain Lodgepole Pine Forest shows the greatest differences between reference and current amounts of succession classes, with a substantial over representation of succession class C on the landscape today.
+* Some BpSs are missing succession classes on the landscape today, such as the Rocky Mountain Subalpine Dry-Mesic Spruce-Fir Forest and Woodland which appears to be missing succession class D currently.  
 
 
 ```{r scls chart, echo=FALSE, message=FALSE, warning=FALSE, fig.width=10, fig.height=9}
@@ -129,7 +136,7 @@ sclasplot <-
   scale_x_discrete(limits = (levels(bps_scls_3$refLabel))) +
   labs(
     title = "Succession Classes past and present",
-    subtitle = "5 BpSs selected for illustration. Not all succession classes present in all BpSs",
+    subtitle = "6 BpSs selected for illustration. Not all succession classes present in all BpSs",
     caption = "Data from landfire.gov; Chart © Randy Swaty",
     x = "",
     y = "Percent")+
@@ -148,5 +155,3 @@ sclasplot <-
 sclasplot
 
 ```
-
-

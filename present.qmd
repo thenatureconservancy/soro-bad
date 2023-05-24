@@ -1,11 +1,9 @@
 ---
-title: "Present"
+title: "Present: Current Ecosystem Conditions"
 ---
 
 ```{r include=FALSE, echo=FALSE, message=FALSE, warning=FALSE}
 library(tidyverse)
-library("png")  
-library("patchwork") 
 
 ```
 
@@ -20,7 +18,10 @@ LANDFIRE's [Existing Vegetation Type, Cover and Height](https://landfire.gov/veg
 
 
 ## Summary
-
+* As with the past, the Rocky Mountain Subalpine Dry-Mesic Spruce-Fir Forest and Woodland is most dominant EVT, mapped at 16% of the subregion.
+* No agricultural or developed types landed in the top 10 EVTs.
+* Trees are the most dominant life form, covering ~70% of the area. 
+ 
 
 ## Most Prevalent Existing Vegetation Types
 
@@ -48,7 +49,7 @@ evtChart <-
     title = "Top 10 Existing Vegetation Types",
     caption = "Data from landfire.gov; Chart © Randy Swaty",
     x = "",
-    y = "Percent of landscape") +
+    y = "percent of landscape") +
   scale_x_discrete(limits = rev(evtname$EVT_NAME),
                    labels = function(x) str_wrap(x, width = 18)) +
   coord_flip() +
@@ -62,13 +63,14 @@ evtChart
 <br>
 
 
-
 ## Existing Vegetation Cover
-The data from chart below is displayed spatially on the map (directly) above the chart. The colors on the graph correspond to the EVC classifications on the landscape and the map is a visual, spatial representation of the same information.
+The Existing Vegetation Cover (EVC) map is a visual representation of EVC classifications across the subregion. The chart below the map provides a breakdown of each vegetation cover classification and their relative dominance across the subregion
 
-For example, the majority of this subregion is classified as "shrub," which aligns with the information conveyed on the chart where shrub cover comprises approximately 80% of the vegetation here.
+From this information, we can see that the majority of this subregion is classified as “tree,” comprising approximately 70% of the vegetation cover.
+
 
 ![](images/evc.jpg){width=100%}
+<br>
 <br>
 
 ```{r evc chart, echo=FALSE, message=FALSE, warning=FALSE, fig.width=10, fig.height=10}
@@ -141,6 +143,9 @@ evcgroup <- left_join(evcgroup, evc_group_cols, by = "label")
 
 evcgroup$label <- factor(evcgroup$label, levels = rev(evcgroup$label))
 
+evcgroup <- evcgroup %>%
+  filter(REL_PERCENT > 0.01)
+
 # plot
 evcChart <-
   ggplot(data = evcgroup, aes(x = label, y = REL_PERCENT, fill = colors)) +
@@ -152,7 +157,7 @@ evcChart <-
     y = "most dominant lifeform") +
   scale_fill_identity() +
   coord_flip() +
-  theme_bw(base_size = 12)+
+  theme_classic(base_size = 12)+
   theme(legend.position = "none") 
 
 
@@ -164,14 +169,17 @@ evcChart
 <br>
 
 ## Existing Vegetation Height
-The data from chart below is displayed spatially on the map (directly) above the chart. The colors on the graph correspond to the EVH height classifications on the landscape showing how majority of the the vegetation height is concentrated in the .25-.9 m height category.
+The Existing Vegetation Height (EVH) map showcases EVH across the subregion. The chart below the map provides the percentage of the landscape represented by each EVH height.
+
+LANDFIRE maps trees as the most dominant life form, with most being between 10 - 20M tall. 
 
 ![](images/evh.jpg){width=100%}
+<br>
 
 ```{r evh chart, echo=FALSE, message=FALSE, warning=FALSE, fig.width=10, fig.height=10}
 
 # load evh attribute table
-  evhname <- read.csv(file = "data/evh_aoi_attributes.csv")
+evhname <- read.csv(file = "data/evh_aoi_attributes.csv")
 
 
 # create "type" column based on conditions
@@ -230,6 +238,8 @@ evhgroup <- left_join(evhgroup, evh_group_cols, by = "label")
 
 evhgroup$label <- factor(evhgroup$label, levels = rev(evhgroup$label))
 
+evhgroup <- evhgroup %>%
+  filter(REL_PERCENT > 0.01)
 
 # plot
 evhChart <-
@@ -239,10 +249,10 @@ ggplot(data = evhgroup, aes(x = label, y = REL_PERCENT, fill = colors)) +
     title = "Existing Vegetation Height",
     caption = "Data from landfire.gov; Chart © Randy Swaty",
     x = "",
-    y = "Percent of landscape") +
+    y = "percent of landscape") +
   scale_fill_identity() +
   coord_flip() +
-  theme_bw(base_size = 12)+
+  theme_classic(base_size = 12)+
   theme(legend.position = "none")
 
 evhChart
@@ -256,9 +266,9 @@ evhChart
 #   labs(
 #     title = "Existing Vegetation Height",
 #     subtitle = "landscape_name",
-#     caption = "\nData from landfire.gov.",
+#     caption = "Data from landfire.gov.",
 #     x = "",
-#     y = "Percent of landscape") +
+#     y = "percent of landscape") +
 #   scale_fill_manual(values = cols, name = "") +
 #   coord_flip() +
 #   theme_bw()

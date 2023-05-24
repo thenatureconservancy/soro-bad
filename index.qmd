@@ -1,35 +1,28 @@
 ---
 title: "Southern Rockies Subregion Landscape Assessment"
-author: "Team LF"
+author: "TNC's LANDFIRE Team, Conservation Data Lab"
 ---
 
 ## Goals of this quick demonstration
 
 We will use [LANDFIRE](https://landfire.gov/){target="blank"} products to:
 
-1. Map and summarize past and present ecosystems and ecosystem conditions
+1. Characterize and map past and present ecosystem conditions
 2. Explore historical disturbance patterns
 3. Summarize patterns of change and management opportunities
 
 
-The following charts, maps, and graphs are based on current LANDFIRE products, however they are intended only as a starting point for further analysis. 
+The following charts, maps, and graphs are based on current LANDFIRE products, and provide a starting point for further analysis.
 
-This introduction will:
+This demonstration will:
 
-* provide context for the past and present ecosystem conditions for each [Southern Rockies Fire Science Network](https://www.southernrockiesfirescience.org/){target="blank"} (SRFSN) "Subregion" (_n=5_)
+* provide context for the past and present ecosystem conditions the Southern Rockies Subregion, one of the [Southern Rockies Fire Science Network's](https://www.southernrockiesfirescience.org/){target="blank"} (SRFSN) five Subregions
 * demonstrate the power of data visualization to explore ecological patterns and functions using LANDFIRE products
 * facilitate an understanding of historical and current conditions on a regional scale
 
-## How to use this web report
-
-* QAQC is ongoing
-* Want to share this web app? Simply share the hyperlink
-* All maps, input datasets and further assistance can be obtained by contacting the author, [Randy Swaty](mailto:rswaty@tnc.org){target="blank"}
-
-
 ## Assessment Location
 
-The SRFSN Wyoming Sagebrush Subregion is located in Central/South central Wyoming and far northwestern Colorado [Read more](https://www.southernrockiesfirescience.org/wyoming-sagebrush/){target="blank"} 
+The SRFSN Southern Rockies Subregion streches from eastern/southern Wyoming down to northern New Mexico.
 
 
 <br>
@@ -61,12 +54,25 @@ library(tmap)
 tmap_mode("view")
 
 # create a quick interactive map
-quickmap <- qtm(shp, borders = "darkgreen",  check.and.fix = TRUE)
+quickmap <- qtm(shp, 
+                borders = "darkgreen", 
+                fill = NULL, 
+                check.and.fix = TRUE, 
+                basemaps = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}',
+                title = 'Southern Rockies Subregion',)
 
 quickmap
 
 
 
 ```
+
+## How to use this web report
+
+* All maps, input datasets and further assistance can be obtained by contacting the author, [Randy Swaty](mailto:rswaty@tnc.org){target="blank"}
+* QAQC is ongoing
+* To share this web app, simply share the hyperlink
+
+
 
 
