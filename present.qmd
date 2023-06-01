@@ -171,7 +171,7 @@ evcChart
 ## Existing Vegetation Height
 The Existing Vegetation Height (EVH) map showcases EVH across the subregion. The chart below the map provides the percentage of the landscape represented by each EVH height.
 
-LANDFIRE maps trees as the most dominant life form, with most being between 10 - 20M tall. 
+LANDFIRE maps trees as the most dominant life form, with most being between 10 - 20m tall. 
 
 ![](images/evh.jpg){width=100%}
 <br>

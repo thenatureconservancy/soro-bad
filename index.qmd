@@ -16,9 +16,9 @@ The following charts, maps, and graphs are based on current LANDFIRE products, a
 
 This demonstration will:
 
-* provide context for the past and present ecosystem conditions the Southern Rockies Subregion, one of the [Southern Rockies Fire Science Network's](https://www.southernrockiesfirescience.org/){target="blank"} (SRFSN) five Subregions
-* demonstrate the power of data visualization to explore ecological patterns and functions using LANDFIRE products
-* facilitate an understanding of historical and current conditions on a regional scale
+* Provide context for the past and present ecosystem conditions the Southern Rockies Subregion, one of the [Southern Rockies Fire Science Network's](https://www.southernrockiesfirescience.org/){target="blank"} (SRFSN) five Subregions
+* Demonstrate the power of data visualization to explore ecological patterns and functions using LANDFIRE products
+* Facilitate an understanding of historical and current conditions on a regional scale
 
 ## Assessment Location
 

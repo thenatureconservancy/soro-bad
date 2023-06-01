@@ -13,9 +13,9 @@ Use this page as a starting point to explore the most prevalent BpSs in the SRFS
 
 ## Summary
 
-* The Rocky Mountain Subalpine Dry-Mesic Spruce-Fir Forest and Woodland BpS was most dominant at ~15%.
+* Prior to European colonization the [Rocky Mountain Subalpine Dry-Mesic Spruce-Fir Forest and Woodland](https://landfirereview.org/search.php?q=Rocky%20Mountain%20Subalpine%20Dry-Mesic%20Spruce-Fir%20Forest%20and%20Woodland&hPP=20&idx=lf_landfire_dev&p=0&is_v=1){target="blank"} BpS was most dominant at ~15%.
 * The top 10 BpSs covered roughly 75% of the subregion.
-* BpSs ranged from steppes to shrublands to sub-alpine forests
+* BpSs ranged from steppes to shrublands to sub-alpine forests.
 
 Scroll down to explore the "historical disturbances per ecosystem" using the interactive web app.
 
@@ -97,6 +97,7 @@ ggsave("./OUTPUTS/fireChart.png", width = 12, height = 5)
 
 ![](images/mfri.jpg){width=100%}
 
+<br>
 
 ## Historical Disturbances (per ecosystem)
 

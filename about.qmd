@@ -1,7 +1,7 @@
 ---
 title: "About this Project"
 ---
-The data compiled for this Southern Rockies Fire Science Network "Subregion" is the result of a volunteer project that supports information dissemination and natural resource management decisions within the 6 subregions of the SRFSN. Why subregions? [Learn more here](https://www.southernrockiesfirescience.org/why-subregions/){target="blank"}
+The data compiled for this Southern Rockies Fire Science Network "Subregion" is the result of a volunteer project that supports information dissemination and natural resource management decisions within the 5 subregions of the SRFSN. Why subregions? [Learn more here](https://www.southernrockiesfirescience.org/why-subregions/){target="blank"}.
 
 ## The Nature Conservancy & LANDFIRE
 

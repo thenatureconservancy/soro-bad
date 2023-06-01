@@ -4,7 +4,7 @@
     "href": "about.html",
     "title": "About this Project",
     "section": "",
-    "text": "The data compiled for this Southern Rockies Fire Science Network “Subregion” is the result of a volunteer project that supports information dissemination and natural resource management decisions within the 6 subregions of the SRFSN. Why subregions? Learn more here"
+    "text": "The data compiled for this Southern Rockies Fire Science Network “Subregion” is the result of a volunteer project that supports information dissemination and natural resource management decisions within the 5 subregions of the SRFSN. Why subregions? Learn more here."
   },
   {
     "objectID": "about.html#the-nature-conservancy-landfire",
@@ -53,14 +53,14 @@
     "href": "comparing.html#succession-classes-for-most-dominant-bpss",
     "title": "Comparisons",
     "section": "Succession classes for most dominant BpSs",
-    "text": "Succession classes for most dominant BpSs\n\nThe Rocky Mountain Lodgepole Pine Forest shows the greatest differences between reference and current amounts of succession classes, with a substantial over representation of succession class C on the landscape today.\nSome BpSs have large underrepresentation of some succession classes on the landscape today, such as succession class D in the Southern Rocky Mountain Ponderosa Pine Woodland currently."
+    "text": "Succession classes for most dominant BpSs\n\nThe Rocky Mountain Lodgepole Pine Forest shows the greatest differences between reference and current amounts of succession classes, with a substantial overrepresentation of succession class C on the landscape today.\nSome BpSs have large underrepresentation of some succession classes on the landscape today. For example succession class D is largely missing in the Southern Rocky Mountain Ponderosa Pine Woodland which is likely due to recent fire suppression."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Southern Rockies Subregion Landscape Assessment",
     "section": "",
-    "text": "We will use LANDFIRE products to:\n\nCharacterize and map past and present ecosystem conditions\nExplore historical disturbance patterns\nSummarize patterns of change and management opportunities\n\nThe following charts, maps, and graphs are based on current LANDFIRE products, and provide a starting point for further analysis.\nThis demonstration will:\n\nprovide context for the past and present ecosystem conditions the Southern Rockies Subregion, one of the Southern Rockies Fire Science Network’s (SRFSN) five Subregions\ndemonstrate the power of data visualization to explore ecological patterns and functions using LANDFIRE products\nfacilitate an understanding of historical and current conditions on a regional scale"
+    "text": "We will use LANDFIRE products to:\n\nCharacterize and map past and present ecosystem conditions\nExplore historical disturbance patterns\nSummarize patterns of change and management opportunities\n\nThe following charts, maps, and graphs are based on current LANDFIRE products, and provide a starting point for further analysis.\nThis demonstration will:\n\nProvide context for the past and present ecosystem conditions the Southern Rockies Subregion, one of the Southern Rockies Fire Science Network’s (SRFSN) five Subregions\nDemonstrate the power of data visualization to explore ecological patterns and functions using LANDFIRE products\nFacilitate an understanding of historical and current conditions on a regional scale"
   },
   {
     "objectID": "index.html#assessment-location",
@@ -88,7 +88,7 @@
     "href": "past.html#summary",
     "title": "Past: Historical Ecosystems",
     "section": "Summary",
-    "text": "Summary\n\nThe Rocky Mountain Subalpine Dry-Mesic Spruce-Fir Forest and Woodland BpS was most dominant at ~15%.\nThe top 10 BpSs covered roughly 75% of the subregion.\nBpSs ranged from steppes to shrublands to sub-alpine forests\n\nScroll down to explore the “historical disturbances per ecosystem” using the interactive web app."
+    "text": "Summary\n\nPrior to European colonization the Rocky Mountain Subalpine Dry-Mesic Spruce-Fir Forest and Woodland BpS was most dominant at ~15%.\nThe top 10 BpSs covered roughly 75% of the subregion.\nBpSs ranged from steppes to shrublands to sub-alpine forests.\n\nScroll down to explore the “historical disturbances per ecosystem” using the interactive web app."
   },
   {
     "objectID": "past.html#most-prevalent-biophysical-settings",
@@ -165,6 +165,6 @@
     "href": "present.html#existing-vegetation-height",
     "title": "Present: Current Ecosystem Conditions",
     "section": "Existing Vegetation Height",
-    "text": "Existing Vegetation Height\nThe Existing Vegetation Height (EVH) map showcases EVH across the subregion. The chart below the map provides the percentage of the landscape represented by each EVH height.\nLANDFIRE maps trees as the most dominant life form, with most being between 10 - 20M tall."
+    "text": "Existing Vegetation Height\nThe Existing Vegetation Height (EVH) map showcases EVH across the subregion. The chart below the map provides the percentage of the landscape represented by each EVH height.\nLANDFIRE maps trees as the most dominant life form, with most being between 10 - 20m tall."
   }
 ]
