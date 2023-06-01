@@ -92,8 +92,8 @@ htmlwidgets::saveWidget(chord,
 
 ## Succession classes for most dominant BpSs
 
-* The Rocky Mountain Lodgepole Pine Forest shows the greatest differences between reference and current amounts of succession classes, with a substantial over representation of succession class C on the landscape today.
-* Some BpSs have large underrepresentation of some succession classes on the landscape today, such as succession class D in the Southern Rocky Mountain Ponderosa Pine Woodland currently.  
+* The Rocky Mountain Lodgepole Pine Forest shows the greatest differences between reference and current amounts of succession classes, with a substantial overrepresentation of succession class C on the landscape today.
+* Some BpSs have large underrepresentation of some succession classes on the landscape today.  For example succession class D is largely missing in the Southern Rocky Mountain Ponderosa Pine Woodland which is likely due to recent fire suppression.  
 
 
 ```{r scls chart, echo=FALSE, message=FALSE, warning=FALSE, fig.width=10, fig.height=9}
