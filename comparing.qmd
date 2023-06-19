@@ -24,6 +24,7 @@ Using LANDFIRE’s BpS products, we explore two different ways to visualize past
 ### Summary
 
 * Broadly speaking, this subregion has not experienced significant ecosystem conversion to agricultural or urban land uses.  
+* Note: number presented when hovering equals acres.
 
 ```{r chord, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 # read in data
