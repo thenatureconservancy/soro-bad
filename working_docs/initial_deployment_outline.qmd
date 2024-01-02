@@ -1,0 +1,74 @@
+---
+title: "Website Outline-Initial Deployment"
+author: "Randy Swaty"
+date: December 22, 2023
+format:
+  docx:
+    toc: true
+---
+
+## Background
+
+Learning about and effectivily using LANDFIRE products can be challenging for multiple reasons, including:
+
+**Complexity of Data:** Understanding LANDFIRE products requires knowledge of ecological concepts, GIS technology, and a specific lexicon with terms such as 'Biophysical Settings' and "Succession Class".
+
+**Ongoing Learning and Updates:** Staying informed about the latest versions and revisions of datasets demands continuous education, creating a barrier for users with limited time or resources.
+
+**Technical Challenges:** Manipulating and integrating LANDFIRE data into workflows involves dealing with diverse software applications, file formats, and spatial data considerations, which can be intimidating for those not well-versed in GIS and data wrangling techniques.
+
+**Resource Requirements:** Effective use of LANDFIRE products may require access to specialized computing resources and software tools (e.g. SyncroSim), posing challenges for individuals or organizations with limited technical capacity.
+
+Additionally, the "firehose" of infomation can pose a problem.  Where is a user to start?  
+
+Here we propose a simple workflow that teaches many techniques and basics about using LANDFIRE products by leading users through conducting a base assessment for a landscape of interest.
+
+## Goals of this initial deployment
+
+This website will need to be dynamic, and will be in a nearly constant state of improvement due to changing data inputs and [hopefully through] feedback.  Goals of the initial deployment of this website include:
+
+1. Support for and development of materials for a January 22-25, 2024 LANDFIRE Training to be held in Marquette, MI.  Largely the idea is to give users resources to 'go back to' as opposed to using the website directly during the training.  We assume we will not have the site developed enough for that by the training.
+2. Provide a test case for a website--can we build a useful and easy-enough-to-maintain website?
+3. Use as framing and thought development for the training.
+
+## Audience and accessibility
+
+Curious user that has some technical skills, courage and X hours.
+
+Another way to think about this: imagine "Erika Ecologist".  She is relatively new to a governmental agency (or NGO), has heard about LANDFIRE, has asked and Googled around about how to learn about LANDFIRE and either was overwhelmed or confused. She has worked in ArcGIS some, but with shapefiles mostly and used Excel and/or a little R in graduate school.  
+
+In terms of accessibility:
+
+* use high contrast elements and website theme
+* use largish fonts
+* present materials in multiple ways when possible
+* use Universal Design principles
+
+
+## Outline 
+
+In general the website should have a minimum of text, have pages that are short, and have multiple ways for users to glean the material when possible (e.g, videos and screenshots).
+
+1. Home/introduction page
+    * Short intro text with goals of website, and what users can expect.
+    * Thumbnail of https://www.youtube.com/watch?v=AMWY-nkml_U&list=PL18E089F3B4608422 or other LANDFIRE introduction video.
+    * Link to https://landfire.gov/ with guidance on how to learn about LANDFIRE (e.g., point to specific areas on the website)
+2. "Dependencies" (we can name it something else; this refers to things needed to make the rest of the process successful)
+    * Software links (e.g., SyncroSim, R, R-Studio, ArcGIS pro)
+    * LANDFIRE data used, and how to get it
+        * list including BpS, EVT, SCLS
+        * links to Jim's videos about downloading LANDFIRE data
+        * link to the rlandfire package (https://github.com/bcknr/rlandfire)(if so, we'll need to couple this with code for using the LANFIRE data obtained, e.g., cropping, masking and building attribute table)
+        * slider (see one on https://thenatureconservancy.github.io/landfiremodels/VegetationModeling.html) with annotated screenshots of using LANDFIRE data viewer
+3.  Initial LANDFIRE data exploration in ArcGIS pro
+    * Limited text outlining what users will do on this page
+    * Slider with screenshots demonstrating how to bring in and symbolize one 'categorical' dataset (e.g., Biophysical Settings)
+    * Limited text explaining challenges and strategies when working with 'continuous'dataset (sorta, e.g., Existing Vegetation Cover)
+    * Slider demonstrating how to work with continuous dataset
+    * Limited text about making maps, highlighting Sarah's videos on Universal Design (all three)
+    * Quick guidance on how to explore and export attribute table
+    
+*Do we go into clipping/batch clipping?  Adding other map layers? What else do they need to know on this page?*
+
+4. Exploring the Biophysical Settings descriptions, models and data (maybe this does as #3)
+5. Making charts in Excel, R and with https://www.datawrapper.de/

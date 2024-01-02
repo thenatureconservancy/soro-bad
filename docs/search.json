@@ -58,30 +58,30 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Southern Rockies Subregion Landscape Assessment",
+    "title": "Assessning a landscape with LANDFIRE data: a beginner’s guide",
     "section": "",
-    "text": "We will use LANDFIRE products to:\n\nCharacterize and map past and present ecosystem conditions\nExplore historical disturbance patterns\nSummarize patterns of change and management opportunities\n\nThe following charts, maps, and graphs are based on current LANDFIRE products, and provide a starting point for further analysis.\nThis demonstration will:\n\nProvide context for the past and present ecosystem conditions the Southern Rockies Subregion, one of the Southern Rockies Fire Science Network’s (SRFSN) five Subregions\nDemonstrate the power of data visualization to explore ecological patterns and functions using LANDFIRE products\nFacilitate an understanding of historical and current conditions on a regional scale"
+    "text": "LANDFIRE products are extremely useful for natural resource managers, allowing users to complete many tasks, including these that are featured in this website:\n\n\n\nHistorical ecosystems map.\n\n\n\nMapping and quantifying historical ecosystems (see map below made with LANDFIRE’s Biophysical Settings data)\nMapping and quantifying existing vegetation type, height and cover\nComparing reference and current amounts of ecosystem succession classes\n\nWhile useful, effectively working with LANDFIRE products can be intimidating due to terminology, GIS processing and data wrangling often required.\nAdditionally, the “fire-hose” of information can pose a problem. Where is a user to start?"
   },
   {
-    "objectID": "index.html#goals-of-this-demonstration",
-    "href": "index.html#goals-of-this-demonstration",
-    "title": "Southern Rockies Subregion Landscape Assessment",
+    "objectID": "index.html#background",
+    "href": "index.html#background",
+    "title": "Assessning a landscape with LANDFIRE data: a beginner’s guide",
     "section": "",
-    "text": "We will use LANDFIRE products to:\n\nCharacterize and map past and present ecosystem conditions\nExplore historical disturbance patterns\nSummarize patterns of change and management opportunities\n\nThe following charts, maps, and graphs are based on current LANDFIRE products, and provide a starting point for further analysis.\nThis demonstration will:\n\nProvide context for the past and present ecosystem conditions the Southern Rockies Subregion, one of the Southern Rockies Fire Science Network’s (SRFSN) five Subregions\nDemonstrate the power of data visualization to explore ecological patterns and functions using LANDFIRE products\nFacilitate an understanding of historical and current conditions on a regional scale"
+    "text": "LANDFIRE products are extremely useful for natural resource managers, allowing users to complete many tasks, including these that are featured in this website:\n\n\n\nHistorical ecosystems map.\n\n\n\nMapping and quantifying historical ecosystems (see map below made with LANDFIRE’s Biophysical Settings data)\nMapping and quantifying existing vegetation type, height and cover\nComparing reference and current amounts of ecosystem succession classes\n\nWhile useful, effectively working with LANDFIRE products can be intimidating due to terminology, GIS processing and data wrangling often required.\nAdditionally, the “fire-hose” of information can pose a problem. Where is a user to start?"
   },
   {
-    "objectID": "index.html#location",
-    "href": "index.html#location",
-    "title": "Southern Rockies Subregion Landscape Assessment",
-    "section": "Location",
-    "text": "Location\nThe SRFSN Southern Rockies Subregion streches from eastern/southern Wyoming down to northern New Mexico."
+    "objectID": "index.html#goals",
+    "href": "index.html#goals",
+    "title": "Assessning a landscape with LANDFIRE data: a beginner’s guide",
+    "section": "Goals",
+    "text": "Goals\nOften a good way to start learning something is to jump in and take on a meaningful project. Here we show you how to take a shapefile of your area of interest, then:\n\nDownload and process multiple LANDFIRE datasets\nBring LANDFIRE data into ArcGIS pro, explore ways to make maps that follow Universal Design principles (i.e., easier for everyone to read)\nQuantify and make charts of attributes of interest\nUnderstand the basics of Biophysical Settings and Models"
   },
   {
-    "objectID": "index.html#how-to-use-this-web-report",
-    "href": "index.html#how-to-use-this-web-report",
-    "title": "Southern Rockies Subregion Landscape Assessment",
-    "section": "How to use this web report",
-    "text": "How to use this web report\n\nAll maps, input datasets and further assistance can be obtained by contacting the author, Randy Swaty, Nature Conservancy Ecologist, Conservation Data Lab co-lead\nReview is ongoing\nTo share this web app, simply share the hyperlink\nToggle between dark and light display of this site in the upper right corner of the page"
+    "objectID": "index.html#prerequsites",
+    "href": "index.html#prerequsites",
+    "title": "Assessning a landscape with LANDFIRE data: a beginner’s guide",
+    "section": "Prerequsites",
+    "text": "Prerequsites\n\nThe following software\n\nArcGIS pro, and basic abilities (e.g., starting a project, bringing in data)\nMicrosoft Excel (or similar) and/or R and R-Studio\nSyncroSim\nMicrosoft word (or similar)\n\n\n\nOther\n\nA shapefile of your area of interest\nInternet access\nSpace to store data\nX# hours"
   },
   {
     "objectID": "past.html",
