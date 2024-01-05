@@ -1,0 +1,85 @@
+---
+title: "LANDFIRE Training, January 23-25, 2024"
+author: "Randy Swaty"
+date: December 20, 2023
+format:
+  docx:
+    toc: true
+---
+
+## Welcome and what we'll do
+
+We are excited to host you in lovely Marquette, MI for a 2+ day LANDFIRE training where we will (among other things):
+
+1. Learn about how the LANDFIRE Program operates
+2. Download and explore some of the main LANDFIRE datasets, both through the main website, and in ArcGIS Pro, and R 
+3. Review historical ecosystem models and documents, learn how to access them
+4. Create draft maps and charts for sharing with collaborators
+5. Discuss example applications, and how LANDFIRE fits into some USFS initiatives such as the Planning Service Organization, Terrestrial Ecological Unit Inventory mapping and fire management
+
+## Pre-work
+
+Randy will happily help with any of this (except USFS-software install issues).  Using these programs is optional, but highly recommended.  Otherwise you will be just sitting and watching, or otherwise put to work :). 
+
+* Software install
+    * R (needed for making charts and exploring data.  https://repo.miserver.it.umich.edu/cran/)
+    * R-Studio (needed for making charts and exploring data. https://posit.co/download/rstudio-desktop/)
+    * SyncroSim (needed for exploring Biophysical Settings (historical ecosystem) models).  Do this ahead of time as you will need to make an account.
+    * ArcGIS Pro (no idea how feds do this)
+    
+*Assuming you will have a Windows laptop with Microsoft office products installed (e.g., Excel and Word)*
+
+*If you are new to R, and coding, do not fear.  If I can do this, you can do this.  We can have a zoom to get you oriented beforehand if that would help.  I will have already written some code for you to use.*
+
+* If possible
+    * get a portable monitor (~$100-150, plugs into USB port)
+    * look over https://claireburtrum.github.io/huronmanistee/
+
+## Agenda
+
+**Monday, January 22, 2024. Travel, and connecting**
+
+* 1200-1330: Lunch and greetings.  Get bearings on what people already know about LANDFIRE.  Location TBD, likely on NMU campus.  
+
+
+*Official workshop over for the day*
+
+* 1700-??  Meet at Marquette Fit Strip for quick ski and/or snowshoe if there's adequate snow.
+
+Blackrocks for beer(s) and dinner from food truck (or walk to Stuckos).
+
+**Tuesday, January 23, 2024.  Big day of exploring and making things.**
+
+* 730-830: Breakfast at Donkers.  Explanation of the day (Randy)
+* 900-930: Orientation to R, R-Studio and how to take notes using Quarto documents. Make a chart!
+* 930-1000: Why, what, who and how of LANDFIRE (Randy and Megan)
+* 1000-1030: Break, catch-up
+* 1030-1130: Explore Biophysical Settings description and model in SyncroSim
+* 11:30-noon: Get directories organized, start download of key LANDFIRE datasets 
+* Noon-1300: Walk to lunch at Wildcat Den
+* 1300-1400: Bring LANDFIRE data into ArcGIS pro, batch clip
+* 1400-1500: Make maps in ArcGIS pro, combine Biophysical Settings and Succession Class data
+* 1500-1530: Break, catch-up
+* 1530-1700: Easy stuff.  Export attribute tables, make charts in R (and quick datawrapper demo), discuss tomorrow
+
+Dinner on your own
+
+**Wednesday, January 25, 2024.  Deal with issues, your goals and fuels **
+
+* 730-830: Breakfast at Cafe Bodega
+* 900-930: Review and discussion about work on Wednesday.  
+* 930-1000: Initial LANDFIRE data review
+* 1000:1030: Break, catch-up
+* 1030-1100: Dealing with LANDFIRE accuracy issues
+* 1100-noon: Intro to LANDFIRE Fuels data (Zeke)
+* Noon-1300: Lunch
+* 1300-1400: Wildfire Exposure Risk Mapping with Zeke, or Vegetation Departure with Randy
+* 1400-1700: Discretionary
+
+**Thursday, January 26, 2024**
+
+Travel day.
+
+
+
+
