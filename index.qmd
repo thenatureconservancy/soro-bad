@@ -1,79 +1,43 @@
 ---
-title: "Southern Rockies Subregion Landscape Assessment"
-author: "TNC's LANDFIRE Team, Conservation Data Lab"
+title: "Assessning a landscape with LANDFIRE data: a beginner's guide"
+author: "The Nature Conservancy's LANDFIRE team"
+date: today
 ---
 
-## Goals of this demonstration
+## Background
 
-We will use [LANDFIRE](https://landfire.gov/){target="blank"} products to:
+[LANDFIRE](https://landfire.gov/index.php) products are extremely useful for natural resource managers, allowing users to complete many tasks, including these that are featured in this website:
 
-1. Characterize and map past and present ecosystem conditions
-2. Explore historical disturbance patterns
-3. Summarize patterns of change and management opportunities
+![Historical ecosystems map.](images/bps.jpg){style="float:right; margin-left: 25px;" fig-alt="\"Historical ecosystems map of a large region in the western United States." fig-align="right" width="250" }
 
-
-The following charts, maps, and graphs are based on current LANDFIRE products, and provide a starting point for further analysis.
-
-This demonstration will:
-
-* Provide context for the past and present ecosystem conditions the Southern Rockies Subregion, one of the [Southern Rockies Fire Science Network's](https://www.southernrockiesfirescience.org/){target="blank"} (SRFSN) five Subregions
-* Demonstrate the power of data visualization to explore ecological patterns and functions using LANDFIRE products
-* Facilitate an understanding of historical and current conditions on a regional scale
-
-## Location
-
-The SRFSN Southern Rockies Subregion streches from eastern/southern Wyoming down to northern New Mexico.
+* Mapping and quantifying historical ecosystems (see map below made with [LANDFIRE's Biophysical Settings data](https://landfire.gov/bps.php))
+* Mapping and quantifying existing vegetation type, height and cover
+* Comparing reference and current amounts of ecosystem succession classes
 
 
-<br>
+While useful, effectively working with LANDFIRE products can be intimidating due to terminology, GIS processing and data wrangling often required.
 
-```{r libraries, message=FALSE, warning=FALSE, include=FALSE}
+Additionally, the "fire-hose" of information can pose a problem. Where is a user to start?
 
-library(foreign)
-library(sf)
-library(terra)
-library(tidyverse)
-library(raster)
+## Goals
 
+Often a good way to start learning something is to jump in and take on a meaningful project. Here we show you how to take a shapefile of your area of interest, then:
 
-```
+* Download and process multiple LANDFIRE datasets
+* Bring LANDFIRE data into ArcGIS pro, explore ways to make maps that follow Universal Design principles (i.e., easier for everyone to read)
+* Quantify and make charts of attributes of interest
+* Understand the basics of Biophysical Settings and Models
 
+## Prerequsites
 
-```{r read shapefile, message=FALSE, warning=FALSE, include=FALSE}
-#  read shape
-shp <- st_read("data/") %>% 
-  st_transform(crs = 5070) %>%
-  st_union() %>%
-  st_sf()
-```
+### The following software
+* ArcGIS pro, and basic abilities (e.g., starting a project, bringing in data)
+* Microsoft Excel (or similar) and/or [R](https://cran.rstudio.com/) and [R-Studio](https://posit.co/download/rstudio-desktop/)
+* SyncroSim
+* Microsoft word (or similar)
 
-```{r locator map, message=FALSE, warning=FALSE, echo=FALSE}
-library(tmap)
-
-# toggle tmap mode to interactive viewing
-tmap_mode("view")
-
-# create a quick interactive map
-quickmap <- qtm(shp, 
-                borders = "darkgreen", 
-                fill = NULL, 
-                check.and.fix = TRUE, 
-                basemaps = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}',
-                title = 'Southern Rockies Subregion',)
-
-quickmap
-
-
-
-```
-
-## How to use this web report
-
-* All maps, input datasets and further assistance can be obtained by contacting the author, [Randy Swaty](mailto:rswaty@tnc.org){target="blank"}, Nature Conservancy Ecologist, Conservation Data Lab co-lead
-* Review is ongoing
-* To share this web app, simply share the hyperlink
-* Toggle between dark and light display of this site in the upper right corner of the page
-
-
-
-
+### Other
+* A shapefile of your area of interest
+* Internet access
+* Space to store data
+* X# hours
